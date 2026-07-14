@@ -1,0 +1,184 @@
+[2026-06-30T22:46:04.492Z] [bram-trace] event=session-start pid=36831
+[2026-06-30T22:46:04.492Z] [whisper] env platform=macos arch=aarch64
+[2026-06-30T22:46:04.492Z] [jsonl-turn-end] op=init providers=claude,codex codexMarker=event_msg/task_complete
+[2026-06-30T22:46:04.493Z] [route] phase=entry method=GET path=__app-info query= correlation_id=route-1782859564493-0
+[2026-06-30T22:46:04.805Z] [route] phase=exit method=GET path=__app-info status=200 body_size=125 duration_ms=311 correlation_id=route-1782859564493-0
+[2026-06-30T22:46:04.807Z] [emit] kind=talk-session-changed payload_size=22553 correlation_id=tsc-1782859564806-0 at_host_ms=1782859564806 source=push
+[2026-06-30T22:46:04.808Z] [event-remember] kind=talk-session-changed payload_size=22553 source=payload
+[2026-06-30T22:46:04.810Z] [emit] kind=conversation-state-changed payload_size=2052 correlation_id= at_host_ms=
+[2026-06-30T22:46:04.810Z] [event-remember] kind=conversation-state-changed payload_size=2052 source=payload
+[2026-06-30T22:46:04.810Z] [watcher] op=session-dirs claude=/Users/jonudell/.claude/projects/-Users-jonudell-sample-target-app claude_exists=true codex=/Users/jonudell/.codex/sessions codex_exists=true
+[2026-06-30T22:46:04.998Z] [route] phase=entry method=GET path=__settings query= correlation_id=route-1782859564998-1
+[2026-06-30T22:46:04.998Z] [route] phase=exit method=GET path=__settings status=200 body_size=254 duration_ms=0 correlation_id=route-1782859564998-1
+[2026-06-30T22:46:05.000Z] [iframe] subkind=pane-reload {"at":"2026-06-30T22:46:05.000Z","src":"tauri://localhost/__project/index.html","stage":"right-initial-src-set"}
+[2026-06-30T22:46:05.001Z] [iframe] subkind=pane-reload {"at":"2026-06-30T22:46:05.000Z","src":"tauri://localhost/tools/index.html#/transcript","stage":"tools-initial-src-set"}
+[2026-06-30T22:46:05.001Z] [route] phase=entry method=GET path=__startup-ready query=event=right-pane-reload correlation_id=route-1782859565001-2
+[2026-06-30T22:46:05.001Z] [event-replay-skip] kind=right-pane-reload reason=no-stored-payload
+[2026-06-30T22:46:05.001Z] [route] phase=exit method=GET path=__startup-ready status=200 body_size=70 duration_ms=0 correlation_id=route-1782859565001-2
+[2026-06-30T22:46:05.001Z] [route] phase=entry method=GET path=__startup-ready query=event=tools-pane-reload correlation_id=route-1782859565001-3
+[2026-06-30T22:46:05.001Z] [event-replay-skip] kind=tools-pane-reload reason=no-stored-payload
+[2026-06-30T22:46:05.002Z] [route] phase=exit method=GET path=__startup-ready status=200 body_size=70 duration_ms=0 correlation_id=route-1782859565001-3
+[2026-06-30T22:46:05.029Z] [route] phase=entry method=GET path=index.html query= correlation_id=route-1782859565029-4
+[2026-06-30T22:46:05.029Z] [route] phase=exit method=GET path=index.html status=200 body_size=0 duration_ms=0 correlation_id=route-1782859565029-4
+[2026-06-30T22:46:05.063Z] [pty-out] bytes=7 preview="claude\r" is_structured=false caller_hint=agent-autostart
+[2026-06-30T22:46:05.063Z] [agent-switch] op=autostart provider=claude command=claude
+[2026-06-30T22:46:05.063Z] [agent-hint] writer=host reason=autostart provider=claude old_provider= changed=true path=-Users-jonudell-sample-target-app.json result=ok
+[2026-06-30T22:46:05.065Z] [iframe] subkind=pane-reload {"at":"2026-06-30T22:46:05.065Z","src":"tauri://localhost/__project/index.html","stage":"right-load"}
+[2026-06-30T22:46:05.066Z] [pty-in] gap_ms=0 bytes=8 runs=1 preview="claude\r\n"
+[2026-06-30T22:46:05.066Z] [pty-in] gap_ms=0 bytes=76 preview="Bram manages the agent here - use the header switcher to change providers.\r\n"
+[2026-06-30T22:46:05.066Z] [pty-in] gap_ms=0 bytes=8 runs=1 preview="\x1b[?1034h"
+[2026-06-30T22:46:05.066Z] [pty-in] gap_ms=0 bytes=18 preview="bash-3.2$ claude\r\n"
+[2026-06-30T22:46:05.071Z] [watcher] path=-Users-jonudell-sample-target-app.json change=remove dedup=false
+[2026-06-30T22:46:05.071Z] [watcher] dispatch=enhance-status path=-Users-jonudell-sample-target-app.json
+[2026-06-30T22:46:05.071Z] [emit] kind=enhance-status-changed payload_size=0 correlation_id=
+[2026-06-30T22:46:05.071Z] [event-remember] kind=enhance-status-changed payload_size=4 source=signal
+[2026-06-30T22:46:05.072Z] [watcher] dispatch=skip path=-Users-jonudell-sample-target-app.json reason=event-kind
+[2026-06-30T22:46:05.072Z] [watcher] path=-Users-jonudell-sample-target-app.json change=create dedup=false
+[2026-06-30T22:46:05.072Z] [watcher] dispatch=enhance-status path=-Users-jonudell-sample-target-app.json
+[2026-06-30T22:46:05.072Z] [emit] kind=enhance-status-changed payload_size=0 correlation_id=
+[2026-06-30T22:46:05.072Z] [event-remember] kind=enhance-status-changed payload_size=4 source=signal
+[2026-06-30T22:46:05.072Z] [watcher] dispatch=right-pane path=-Users-jonudell-sample-target-app.json
+[2026-06-30T22:46:05.072Z] [emit] kind=right-pane-reload payload_size=0 correlation_id=
+[2026-06-30T22:46:05.072Z] [watcher] path=-Users-jonudell-sample-target-app.json change=modify dedup=false
+[2026-06-30T22:46:05.072Z] [watcher] dispatch=enhance-status path=-Users-jonudell-sample-target-app.json
+[2026-06-30T22:46:05.072Z] [emit] kind=enhance-status-changed payload_size=0 correlation_id=
+[2026-06-30T22:46:05.072Z] [event-remember] kind=enhance-status-changed payload_size=4 source=signal
+[2026-06-30T22:46:05.072Z] [watcher] dispatch=skip path=-Users-jonudell-sample-target-app.json reason=debounce-100ms
+[2026-06-30T22:46:05.079Z] [route] phase=entry method=GET path=__settings query= correlation_id=route-1782859565079-5
+[2026-06-30T22:46:05.079Z] [route] phase=exit method=GET path=__settings status=200 body_size=254 duration_ms=0 correlation_id=route-1782859565079-5
+[2026-06-30T22:46:05.080Z] [route] phase=entry method=GET path=__settings query= correlation_id=route-1782859565080-6
+[2026-06-30T22:46:05.080Z] [route] phase=exit method=GET path=__settings status=200 body_size=254 duration_ms=0 correlation_id=route-1782859565080-6
+[2026-06-30T22:46:05.080Z] [iframe] subkind=pane-reload {"at":"2026-06-30T22:46:05.080Z","iframeSrc":"tauri://localhost/__project/index.html","priorSrc":"tauri://localhost/__project/index.html","stage":"right-listener-fired"}
+[2026-06-30T22:46:05.080Z] [route] phase=entry method=GET path=__vendor/xmlui-standalone.umd.js query=v=1782859565080 correlation_id=route-1782859565080-7
+[2026-06-30T22:46:05.082Z] [route] phase=exit method=GET path=__vendor/xmlui-standalone.umd.js status=200 body_size=6228571 duration_ms=1 correlation_id=route-1782859565080-7
+[2026-06-30T22:46:05.082Z] [route] phase=entry method=GET path=__startup-ready query=event=pty-menu-changed correlation_id=route-1782859565082-8
+[2026-06-30T22:46:05.082Z] [event-replay-skip] kind=pty-menu-changed reason=no-stored-payload
+[2026-06-30T22:46:05.082Z] [route] phase=entry method=GET path=__startup-ready query=event=turn-state-changed correlation_id=route-1782859565082-9
+[2026-06-30T22:46:05.082Z] [route] phase=entry method=GET path=__startup-ready query=event=settings-changed correlation_id=route-1782859565082-11
+[2026-06-30T22:46:05.082Z] [route] phase=entry method=GET path=__startup-ready query=event=turn-state-changed correlation_id=route-1782859565082-10
+[2026-06-30T22:46:05.082Z] [event-replay-skip] kind=turn-state-changed reason=no-stored-payload
+[2026-06-30T22:46:05.082Z] [event-replay-skip] kind=settings-changed reason=no-stored-payload
+[2026-06-30T22:46:05.082Z] [route] phase=exit method=GET path=__startup-ready status=200 body_size=71 duration_ms=0 correlation_id=route-1782859565082-9
+[2026-06-30T22:46:05.082Z] [event-replay-skip] kind=turn-state-changed reason=no-stored-payload
+[2026-06-30T22:46:05.082Z] [route] phase=exit method=GET path=__startup-ready status=200 body_size=69 duration_ms=0 correlation_id=route-1782859565082-8
+[2026-06-30T22:46:05.082Z] [route] phase=exit method=GET path=__startup-ready status=200 body_size=69 duration_ms=0 correlation_id=route-1782859565082-11
+[2026-06-30T22:46:05.082Z] [route] phase=exit method=GET path=__startup-ready status=200 body_size=71 duration_ms=0 correlation_id=route-1782859565082-10
+[2026-06-30T22:46:05.083Z] [route] phase=entry method=GET path=__startup-ready query=event=pty-menu-changed correlation_id=route-1782859565083-12
+[2026-06-30T22:46:05.083Z] [event-replay-skip] kind=pty-menu-changed reason=no-stored-payload
+[2026-06-30T22:46:05.083Z] [route] phase=exit method=GET path=__startup-ready status=200 body_size=69 duration_ms=0 correlation_id=route-1782859565083-12
+[2026-06-30T22:46:05.089Z] [iframe] subkind=tools-route-boot {"at":"2026-06-30T22:46:05.088Z","current":"#/transcript","pathname":"/tools/index.html","saved":"#/transcript"}
+[2026-06-30T22:46:05.092Z] [iframe] subkind=pane-reload {"at":"2026-06-30T22:46:05.089Z","elapsedMs":9,"src":"tauri://localhost/__project/index.html","stage":"right-url-resolved"}
+[2026-06-30T22:46:05.094Z] [iframe] subkind=pane-reload {"at":"2026-06-30T22:46:05.089Z","elapsedMs":9,"source":"right-pane-reload","src":"tauri://localhost/__project/index.html?t=1782859565089","stage":"right-src-set"}
+[2026-06-30T22:46:05.234Z] [iframe] subkind=first-output-seen {"at":"2026-06-30T22:46:05.232Z","value":false}
+[2026-06-30T22:46:05.236Z] [route] phase=entry method=GET path=index.html query=t=1782859565089 correlation_id=route-1782859565236-13
+[2026-06-30T22:46:05.236Z] [route] phase=exit method=GET path=index.html status=200 body_size=0 duration_ms=0 correlation_id=route-1782859565236-13
+[2026-06-30T22:46:05.241Z] [iframe] subkind=console-log {"args":[{"preview":"XMLUI version: 0.12.30 (built 6/23/2026)","type":"string"}],"at":"2026-06-30T22:46:05.239Z","message":"XMLUI version: 0.12.30 (built 6/23/2026)","stack":""}
+[2026-06-30T22:46:05.248Z] [iframe] subkind=pane-reload {"at":"2026-06-30T22:46:05.247Z","src":"tauri://localhost/__project/index.html?t=1782859565089","stage":"right-load"}
+[2026-06-30T22:46:05.293Z] [route] phase=entry method=GET path=tools/Main.xmlui.xs query= correlation_id=route-1782859565293-14
+[2026-06-30T22:46:05.293Z] [route] phase=exit method=GET path=tools/Main.xmlui.xs status=404 body_size=0 duration_ms=0 correlation_id=route-1782859565293-14
+[2026-06-30T22:46:05.634Z] [pty-in] gap_ms=567 bytes=13 runs=1 preview="\x1b7\x1b[r\x1b8\x1b[?25h"
+[2026-06-30T22:46:05.634Z] [pty-in] gap_ms=0 bytes=6 runs=1 preview="\x1b[?25l"
+[2026-06-30T22:46:05.634Z] [pty-in] gap_ms=0 bytes=24 preview="\x1b[?2004h\x1b[?1004h\x1b[?2031h"
+[2026-06-30T22:46:05.815Z] [iframe] subkind=voice-trace {"at":"2026-06-30T22:46:05.815Z","stage":"external-subscribed","totalSubscribers":1}
+[2026-06-30T22:46:05.817Z] [route] phase=entry method=GET path=__inflight query=t=0 correlation_id=route-1782859565817-15
+[2026-06-30T22:46:05.817Z] [route] phase=entry method=GET path=__enhance/status query= correlation_id=route-1782859565817-17
+[2026-06-30T22:46:05.818Z] [route] phase=exit method=GET path=__inflight status=200 body_size=2 duration_ms=0 correlation_id=route-1782859565817-15
+[2026-06-30T22:46:05.818Z] [route] phase=entry method=GET path=__right-pane-info query= correlation_id=route-1782859565817-16
+[2026-06-30T22:46:05.818Z] [route] phase=exit method=GET path=__right-pane-info status=200 body_size=120 duration_ms=0 correlation_id=route-1782859565817-16
+[2026-06-30T22:46:05.818Z] [route] phase=entry method=GET path=__app-info query= correlation_id=route-1782859565818-18
+[2026-06-30T22:46:05.818Z] [route] phase=entry method=GET path=__settings query= correlation_id=route-1782859565818-19
+[2026-06-30T22:46:05.818Z] [route] phase=exit method=GET path=__app-info status=200 body_size=125 duration_ms=0 correlation_id=route-1782859565818-18
+[2026-06-30T22:46:05.818Z] [route] phase=exit method=GET path=__settings status=200 body_size=254 duration_ms=0 correlation_id=route-1782859565818-19
+[2026-06-30T22:46:05.818Z] [route] phase=entry method=GET path=__sessions/list query=limit=20 correlation_id=route-1782859565818-20
+[2026-06-30T22:46:05.819Z] [sessions] op=list provider=claude visible=1 current_id=6cba45c1-b278-4adb-8d0b-9a4381a1a6d1 limit=20
+[2026-06-30T22:46:05.819Z] [route] phase=exit method=GET path=__sessions/list status=200 body_size=154 duration_ms=0 correlation_id=route-1782859565818-20
+[2026-06-30T22:46:05.819Z] [route] phase=exit method=GET path=__enhance/status status=200 body_size=982 duration_ms=1 correlation_id=route-1782859565817-17
+[2026-06-30T22:46:05.820Z] [route] phase=entry method=GET path=__feedback/map query= correlation_id=route-1782859565820-21
+[2026-06-30T22:46:05.820Z] [route] phase=exit method=GET path=__feedback/map status=200 body_size=2 duration_ms=0 correlation_id=route-1782859565820-21
+[2026-06-30T22:46:05.822Z] [iframe] subkind=paste-image {"at":"2026-06-30T22:46:05.821Z","count":0,"stage":"query-count","target":"message-agent"}
+[2026-06-30T22:46:05.822Z] [iframe] subkind=paste-image {"at":"2026-06-30T22:46:05.822Z","count":0,"paths":{"__summary":"array","length":0,"sample":[]},"stage":"query-paths","target":"message-agent"}
+[2026-06-30T22:46:05.886Z] [route] phase=entry method=GET path=__startup-ready query=event=pty-menu-changed correlation_id=route-1782859565886-22
+[2026-06-30T22:46:05.887Z] [event-replay-skip] kind=pty-menu-changed reason=no-stored-payload
+[2026-06-30T22:46:05.887Z] [route] phase=exit method=GET path=__startup-ready status=200 body_size=69 duration_ms=0 correlation_id=route-1782859565886-22
+[2026-06-30T22:46:05.887Z] [route] phase=entry method=GET path=__startup-ready query=event=turn-state-changed correlation_id=route-1782859565887-23
+[2026-06-30T22:46:05.887Z] [event-replay-skip] kind=turn-state-changed reason=no-stored-payload
+[2026-06-30T22:46:05.887Z] [route] phase=exit method=GET path=__startup-ready status=200 body_size=71 duration_ms=0 correlation_id=route-1782859565887-23
+[2026-06-30T22:46:05.889Z] [iframe] subkind=transcript-menu-row {"at":"2026-06-30T22:46:05.888Z","key":"(none)","options":0,"present":false,"stage":"mount","tool":"","transcriptMounted":true}
+[2026-06-30T22:46:05.890Z] [iframe] subkind=subscriber-changed {"at":"2026-06-30T22:46:05.890Z","context":"talk-session-changed","count":1,"key":"__bramLatestJsonlPushTalkSessionUnsub","op":"subscribe"}
+[2026-06-30T22:46:05.891Z] [route] phase=entry method=GET path=__startup-ready query=event=talk-session-changed correlation_id=route-1782859565891-24
+[2026-06-30T22:46:05.892Z] [emit] kind=talk-session-changed payload_size=22553 correlation_id=tsc-1782859565891-1 at_host_ms=1782859565891 source=push
+[2026-06-30T22:46:05.892Z] [iframe] subkind=heartbeat-drift {"at":"2026-06-30T22:46:05.892Z","drift_ms":399}
+[2026-06-30T22:46:05.892Z] [event-remember] kind=talk-session-changed payload_size=22553 source=payload
+[2026-06-30T22:46:05.893Z] [route] phase=entry method=GET path=__startup-ready query=event=inflight-claim-changed correlation_id=route-1782859565893-25
+[2026-06-30T22:46:05.893Z] [event-replay-skip] kind=inflight-claim-changed reason=no-stored-payload
+[2026-06-30T22:46:05.893Z] [route] phase=exit method=GET path=__startup-ready status=200 body_size=75 duration_ms=0 correlation_id=route-1782859565893-25
+[2026-06-30T22:46:05.893Z] [route] phase=entry method=GET path=__startup-ready query=event=agent-status-changed correlation_id=route-1782859565893-26
+[2026-06-30T22:46:05.893Z] [route] phase=entry method=GET path=__startup-ready query=event=message-bounced correlation_id=route-1782859565893-27
+[2026-06-30T22:46:05.893Z] [route] phase=entry method=GET path=__startup-ready query=event=enhance-status-changed correlation_id=route-1782859565893-28
+[2026-06-30T22:46:05.893Z] [route] phase=entry method=GET path=__startup-ready query=event=feedback-drafts-changed correlation_id=route-1782859565893-29
+[2026-06-30T22:46:05.893Z] [event-replay] kind=enhance-status-changed ts_ms=1782859565072 payload_size=4
+[2026-06-30T22:46:05.893Z] [route] phase=exit method=GET path=__startup-ready status=200 body_size=85 duration_ms=2 correlation_id=route-1782859565891-24
+[2026-06-30T22:46:05.893Z] [route] phase=exit method=GET path=__startup-ready status=200 body_size=107 duration_ms=0 correlation_id=route-1782859565893-28
+[2026-06-30T22:46:05.893Z] [route] phase=entry method=GET path=__startup-ready query=event=feedback-history-changed correlation_id=route-1782859565893-31
+[2026-06-30T22:46:05.893Z] [event-replay-skip] kind=feedback-history-changed reason=no-stored-payload
+[2026-06-30T22:46:05.893Z] [route] phase=exit method=GET path=__startup-ready status=200 body_size=77 duration_ms=0 correlation_id=route-1782859565893-31
+[2026-06-30T22:46:05.893Z] [event-replay-skip] kind=feedback-drafts-changed reason=no-stored-payload
+[2026-06-30T22:46:05.893Z] [event-replay-skip] kind=agent-status-changed reason=no-stored-payload
+[2026-06-30T22:46:05.893Z] [route] phase=exit method=GET path=__startup-ready status=200 body_size=76 duration_ms=0 correlation_id=route-1782859565893-29
+[2026-06-30T22:46:05.893Z] [route] phase=entry method=GET path=__startup-ready query=event=sessions-list-changed correlation_id=route-1782859565893-30
+[2026-06-30T22:46:05.893Z] [event-replay-skip] kind=sessions-list-changed reason=no-stored-payload
+[2026-06-30T22:46:05.893Z] [event-replay-skip] kind=message-bounced reason=no-stored-payload
+[2026-06-30T22:46:05.893Z] [route] phase=exit method=GET path=__startup-ready status=200 body_size=73 duration_ms=0 correlation_id=route-1782859565893-26
+[2026-06-30T22:46:05.893Z] [route] phase=exit method=GET path=__startup-ready status=200 body_size=74 duration_ms=0 correlation_id=route-1782859565893-30
+[2026-06-30T22:46:05.893Z] [route] phase=exit method=GET path=__startup-ready status=200 body_size=68 duration_ms=0 correlation_id=route-1782859565893-27
+[2026-06-30T22:46:06.207Z] [pty-in] gap_ms=572 bytes=8 runs=2 preview="\x1b[>0q"
+[2026-06-30T22:46:06.207Z] [pty-in] gap_ms=0 bytes=20 preview="\x1b]0;✳ Claude Code\x07"
+[2026-06-30T22:46:06.207Z] [spinner-period] state=started
+[2026-06-30T22:46:06.217Z] [iframe] subkind=refetch-called {"at":"2026-06-30T22:46:06.216Z","context":"enhance-status-changed"}
+[2026-06-30T22:46:06.218Z] [route] phase=entry method=GET path=__feedback/map query= correlation_id=route-1782859566218-32
+[2026-06-30T22:46:06.218Z] [route] phase=exit method=GET path=__feedback/map status=200 body_size=2 duration_ms=0 correlation_id=route-1782859566218-32
+[2026-06-30T22:46:06.220Z] [route] phase=entry method=GET path=__feedback/map query= correlation_id=route-1782859566220-33
+[2026-06-30T22:46:06.220Z] [route] phase=exit method=GET path=__feedback/map status=200 body_size=2 duration_ms=0 correlation_id=route-1782859566220-33
+[2026-06-30T22:46:06.220Z] [route] phase=entry method=GET path=__sessions/list query=limit=20 correlation_id=route-1782859566220-34
+[2026-06-30T22:46:06.221Z] [route] phase=entry method=GET path=__sessions/list query=limit=20 correlation_id=route-1782859566221-35
+[2026-06-30T22:46:06.221Z] [route] phase=entry method=GET path=__sessions/list query=limit=20 correlation_id=route-1782859566221-36
+[2026-06-30T22:46:06.221Z] [sessions] op=list provider=claude visible=1 current_id=6cba45c1-b278-4adb-8d0b-9a4381a1a6d1 limit=20
+[2026-06-30T22:46:06.221Z] [route] phase=exit method=GET path=__sessions/list status=200 body_size=154 duration_ms=0 correlation_id=route-1782859566221-36
+[2026-06-30T22:46:06.221Z] [sessions] op=list provider=claude visible=1 current_id=6cba45c1-b278-4adb-8d0b-9a4381a1a6d1 limit=20
+[2026-06-30T22:46:06.221Z] [route] phase=exit method=GET path=__sessions/list status=200 body_size=154 duration_ms=1 correlation_id=route-1782859566220-34
+[2026-06-30T22:46:06.222Z] [sessions] op=list provider=claude visible=1 current_id=6cba45c1-b278-4adb-8d0b-9a4381a1a6d1 limit=20
+[2026-06-30T22:46:06.222Z] [route] phase=exit method=GET path=__sessions/list status=200 body_size=154 duration_ms=1 correlation_id=route-1782859566221-35
+[2026-06-30T22:46:06.223Z] [route] phase=entry method=GET path=__enhance/status query= correlation_id=route-1782859566223-37
+[2026-06-30T22:46:06.224Z] [iframe] subkind=subscriber-changed {"at":"2026-06-30T22:46:06.222Z","context":"talk-session-changed","count":0,"key":"__bramLatestJsonlPushTalkSessionUnsub","op":"unsubscribe"}
+[2026-06-30T22:46:06.224Z] [route] phase=exit method=GET path=__enhance/status status=200 body_size=982 duration_ms=0 correlation_id=route-1782859566223-37
+[2026-06-30T22:46:06.224Z] [iframe] subkind=subscriber-changed {"at":"2026-06-30T22:46:06.223Z","context":"talk-session-changed","count":1,"key":"__bramLatestJsonlPushTalkSessionUnsub","op":"subscribe"}
+[2026-06-30T22:46:06.227Z] [pty-in] gap_ms=19 bytes=1024 preview="\x1b[38;5;174m▗\x1b[48;5;174m\x1b[38;5;16m ▗   ▖ \x1b[49m\x1b[38;5;174m▖\x1b[12G\x1b[39m\x1b[1mClaude\x1b[1..."
+[2026-06-30T22:46:06.227Z] [pty-in] gap_ms=0 bytes=29 preview="/effort\x1b[39m\r\r\n\x1b[2C\x1b[3A\x1b[?25h"
+[2026-06-30T22:46:06.229Z] [iframe] subkind=agent-header-branch {"at":"2026-06-30T22:46:06.228Z","branch":"idle-provider","elapsed":"","lastSeenAgentVerb":"","provider":"claude","source":"","state":"","verb":""}
+[2026-06-30T22:46:06.229Z] [iframe] subkind=event-received {"at":"2026-06-30T22:46:06.229Z","at_host_ms":1782859565891,"context":"talk-session-changed","correlation_id":"tsc-1782859565891-1","delta_to_emit_ms":338,"subscribers":1}
+[2026-06-30T22:46:06.230Z] [iframe] subkind=jsonl-fanout {"at":"2026-06-30T22:46:06.229Z","len":20932,"offset":20952,"reset":true,"sid":"6cba45c1-b278-4adb-8d0b-9a4381a1a6d1","source":"push","truncated":false}
+[2026-06-30T22:46:06.230Z] [iframe] subkind=jsonl-broadcast {"at":"2026-06-30T22:46:06.230Z","len":20932,"subscribers":1}
+[2026-06-30T22:46:06.231Z] [iframe] subkind=event-received {"at":"2026-06-30T22:46:06.230Z","event_name":"enhance-status-changed","subscribers":1}
+[2026-06-30T22:46:06.231Z] [iframe] subkind=subscriber-fired {"at":"2026-06-30T22:46:06.230Z","elapsed_ms":0,"event_name":"enhance-status-changed","subscriber_index":0}
+[2026-06-30T22:46:06.231Z] [iframe] subkind=helpers-js-loaded {"at":"2026-06-30T22:46:06.231Z","build":"batch-v2"}
+[2026-06-30T22:46:06.234Z] [pty-out] bytes=3 preview="\x1b[I" is_structured=false caller_hint=unknown
+[2026-06-30T22:46:06.235Z] [pty-out] bytes=7 preview="\x1b[?1;2c" is_structured=false caller_hint=unknown
+[2026-06-30T22:46:06.239Z] [iframe] subkind=agent-switcher {"agentSetting":"claude","at":"2026-06-30T22:46:06.239Z","hasSelect":false,"provider":"claude","stage":"settings-loaded","switching":false}
+[2026-06-30T22:46:06.271Z] [route] phase=entry method=GET path=__inflight query=t=1 correlation_id=route-1782859566271-38
+[2026-06-30T22:46:06.271Z] [route] phase=exit method=GET path=__inflight status=200 body_size=2 duration_ms=0 correlation_id=route-1782859566271-38
+[2026-06-30T22:46:06.308Z] [iframe] subkind=refetch-called {"at":"2026-06-30T22:46:06.307Z","context":"enhance-status-changed"}
+[2026-06-30T22:46:06.310Z] [iframe] subkind=subscriber-changed {"at":"2026-06-30T22:46:06.309Z","context":"talk-session-changed","count":0,"key":"__bramLatestJsonlPushTalkSessionUnsub","op":"unsubscribe"}
+[2026-06-30T22:46:06.310Z] [route] phase=entry method=GET path=__enhance/status query= correlation_id=route-1782859566310-39
+[2026-06-30T22:46:06.310Z] [iframe] subkind=subscriber-changed {"at":"2026-06-30T22:46:06.310Z","context":"talk-session-changed","count":1,"key":"__bramLatestJsonlPushTalkSessionUnsub","op":"subscribe"}
+[2026-06-30T22:46:06.311Z] [route] phase=exit method=GET path=__enhance/status status=200 body_size=982 duration_ms=1 correlation_id=route-1782859566310-39
+[2026-06-30T22:46:06.416Z] [iframe] subkind=console-error {"at":"2026-06-30T22:46:06.416Z","colno":0,"errorMessage":null,"errorName":null,"filename":"tauri://localhost/tools/index.html#/transcript","lineno":0,"message":"ResizeObserver loop completed with undelivered notifications.","source":"window.onerror","stack":null}
+[2026-06-30T22:46:06.417Z] [iframe] subkind=console-error {"at":"2026-06-30T22:46:06.416Z","colno":0,"errorMessage":null,"errorName":null,"filename":"tauri://localhost/tools/index.html#/transcript","lineno":0,"message":"ResizeObserver loop completed with undelivered notifications.","source":"window.error","stack":null}
+[2026-06-30T22:46:06.539Z] [iframe] subkind=pane-reload {"at":"2026-06-30T22:46:06.538Z","src":"tauri://localhost/__project/index.html?t=1782859565089","stage":"right-initial-retry-skipped"}
+[2026-06-30T22:46:06.574Z] [pty-in] gap_ms=346 bytes=168 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[34C\x1b[1A\x1b[38;5;220mUpdate available! Run: \x1b[1mbrew upgrade claud..."
+[2026-06-30T22:46:06.594Z] [iframe] subkind=refetch-called {"at":"2026-06-30T22:46:06.594Z","context":"header-inflight-claim-changed","tick":1}
+[2026-06-30T22:46:06.595Z] [iframe] subkind=header-inflight-refetch {"at":"2026-06-30T22:46:06.594Z","state":"","tick":1}
+[2026-06-30T22:46:08.064Z] [agent-switch] op=refresh provider=claude source=autostart
+[2026-06-30T22:46:08.064Z] [emit] kind=talk-session-changed payload_size=208 correlation_id=tsc-1782859568064-2 at_host_ms=1782859568064 source=push
+[2026-06-30T22:46:08.064Z] [event-remember] kind=talk-session-changed payload_size=208 source=payload
+[2026-06-30T22:46:08.066Z] [iframe] subkind=event-received {"at":"2026-06-30T22:46:08.065Z","at_host_ms":1782859568064,"context":"talk-session-changed","correlation_id":"tsc-1782859568064-2","delta_to_emit_ms":1,"subscribers":1}
+[2026-06-30T22:46:08.066Z] [iframe] subkind=jsonl-fanout {"at":"2026-06-30T22:46:08.065Z","len":0,"offset":20952,"reset":false,"sid":"6cba45c1-b278-4adb-8d0b-9a4381a1a6d1","source":"push","truncated":false}

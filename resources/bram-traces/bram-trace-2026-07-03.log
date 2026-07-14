@@ -1,0 +1,178 @@
+[2026-07-01T19:49:19.188Z] [bram-trace] event=session-start pid=35878
+[2026-07-01T19:49:19.188Z] [whisper] env platform=macos arch=aarch64
+[2026-07-01T19:49:19.188Z] [jsonl-turn-end] op=init providers=claude,codex codexMarker=event_msg/task_complete
+[2026-07-01T19:49:19.189Z] [route] phase=entry method=GET path=__app-info query= correlation_id=route-1782935359189-0
+[2026-07-01T19:49:19.584Z] [route] phase=exit method=GET path=__app-info status=200 body_size=125 duration_ms=395 correlation_id=route-1782935359189-0
+[2026-07-01T19:49:19.596Z] [emit] kind=talk-session-changed payload_size=73522 correlation_id=tsc-1782935359588-0 at_host_ms=1782935359588 source=push
+[2026-07-01T19:49:19.601Z] [event-remember] kind=talk-session-changed payload_size=73522 source=payload
+[2026-07-01T19:49:19.611Z] [emit] kind=conversation-state-changed payload_size=1360 correlation_id= at_host_ms=
+[2026-07-01T19:49:19.611Z] [event-remember] kind=conversation-state-changed payload_size=1360 source=payload
+[2026-07-01T19:49:19.611Z] [watcher] op=session-dirs claude=/Users/jonudell/.claude/projects/-Users-jonudell-sample-target-app claude_exists=true codex=/Users/jonudell/.codex/sessions codex_exists=true
+[2026-07-01T19:49:20.083Z] [route] phase=entry method=GET path=__settings query= correlation_id=route-1782935360083-1
+[2026-07-01T19:49:20.084Z] [route] phase=exit method=GET path=__settings status=200 body_size=253 duration_ms=0 correlation_id=route-1782935360083-1
+[2026-07-01T19:49:20.087Z] [iframe] subkind=pane-reload {"at":"2026-07-01T19:49:20.086Z","src":"tauri://localhost/__project/index.html","stage":"right-initial-src-set"}
+[2026-07-01T19:49:20.088Z] [iframe] subkind=pane-reload {"at":"2026-07-01T19:49:20.087Z","src":"tauri://localhost/tools/index.html#/commits","stage":"tools-initial-src-set"}
+[2026-07-01T19:49:20.089Z] [route] phase=entry method=GET path=__startup-ready query=event=tools-pane-reload correlation_id=route-1782935360089-2
+[2026-07-01T19:49:20.089Z] [route] phase=entry method=GET path=__startup-ready query=event=right-pane-reload correlation_id=route-1782935360089-3
+[2026-07-01T19:49:20.089Z] [event-replay-skip] kind=tools-pane-reload reason=no-stored-payload
+[2026-07-01T19:49:20.089Z] [event-replay-skip] kind=right-pane-reload reason=no-stored-payload
+[2026-07-01T19:49:20.089Z] [route] phase=exit method=GET path=__startup-ready status=200 body_size=70 duration_ms=0 correlation_id=route-1782935360089-2
+[2026-07-01T19:49:20.089Z] [route] phase=exit method=GET path=__startup-ready status=200 body_size=70 duration_ms=0 correlation_id=route-1782935360089-3
+[2026-07-01T19:49:20.125Z] [route] phase=entry method=GET path=index.html query= correlation_id=route-1782935360125-4
+[2026-07-01T19:49:20.126Z] [route] phase=exit method=GET path=index.html status=200 body_size=404 duration_ms=0 correlation_id=route-1782935360125-4
+[2026-07-01T19:49:20.163Z] [pty-out] bytes=7 preview="claude\r" is_structured=false caller_hint=agent-autostart
+[2026-07-01T19:49:20.163Z] [agent-switch] op=autostart provider=claude command=claude
+[2026-07-01T19:49:20.163Z] [agent-hint] writer=host reason=autostart provider=claude old_provider= changed=true path=-Users-jonudell-sample-target-app.json result=ok
+[2026-07-01T19:49:20.167Z] [pty-in] gap_ms=0 bytes=8 runs=1 preview="claude\r\n"
+[2026-07-01T19:49:20.167Z] [pty-in] gap_ms=0 bytes=76 preview="Bram manages the agent here - use the header switcher to change providers.\r\n"
+[2026-07-01T19:49:20.168Z] [pty-in] gap_ms=0 bytes=8 runs=1 preview="\x1b[?1034h"
+[2026-07-01T19:49:20.168Z] [pty-in] gap_ms=0 bytes=18 preview="bash-3.2$ claude\r\n"
+[2026-07-01T19:49:20.172Z] [watcher] path=-Users-jonudell-sample-target-app.json change=remove dedup=false
+[2026-07-01T19:49:20.172Z] [watcher] dispatch=enhance-status path=-Users-jonudell-sample-target-app.json
+[2026-07-01T19:49:20.172Z] [emit] kind=enhance-status-changed payload_size=0 correlation_id=
+[2026-07-01T19:49:20.172Z] [event-remember] kind=enhance-status-changed payload_size=4 source=signal
+[2026-07-01T19:49:20.172Z] [watcher] dispatch=skip path=-Users-jonudell-sample-target-app.json reason=event-kind
+[2026-07-01T19:49:20.172Z] [watcher] path=-Users-jonudell-sample-target-app.json change=create dedup=false
+[2026-07-01T19:49:20.172Z] [watcher] dispatch=enhance-status path=-Users-jonudell-sample-target-app.json
+[2026-07-01T19:49:20.172Z] [emit] kind=enhance-status-changed payload_size=0 correlation_id=
+[2026-07-01T19:49:20.172Z] [event-remember] kind=enhance-status-changed payload_size=4 source=signal
+[2026-07-01T19:49:20.172Z] [watcher] dispatch=right-pane path=-Users-jonudell-sample-target-app.json
+[2026-07-01T19:49:20.172Z] [emit] kind=right-pane-reload payload_size=0 correlation_id=
+[2026-07-01T19:49:20.172Z] [watcher] path=-Users-jonudell-sample-target-app.json change=modify dedup=false
+[2026-07-01T19:49:20.172Z] [watcher] dispatch=enhance-status path=-Users-jonudell-sample-target-app.json
+[2026-07-01T19:49:20.172Z] [emit] kind=enhance-status-changed payload_size=0 correlation_id=
+[2026-07-01T19:49:20.172Z] [event-remember] kind=enhance-status-changed payload_size=4 source=signal
+[2026-07-01T19:49:20.172Z] [watcher] dispatch=skip path=-Users-jonudell-sample-target-app.json reason=debounce-100ms
+[2026-07-01T19:49:20.177Z] [route] phase=entry method=GET path=__settings query= correlation_id=route-1782935360177-5
+[2026-07-01T19:49:20.177Z] [route] phase=exit method=GET path=__settings status=200 body_size=253 duration_ms=0 correlation_id=route-1782935360177-5
+[2026-07-01T19:49:20.178Z] [route] phase=entry method=GET path=__settings query= correlation_id=route-1782935360178-6
+[2026-07-01T19:49:20.179Z] [route] phase=exit method=GET path=__settings status=200 body_size=253 duration_ms=0 correlation_id=route-1782935360178-6
+[2026-07-01T19:49:20.180Z] [route] phase=entry method=GET path=__vendor/xmlui-standalone.umd.js query=v=1782935360179 correlation_id=route-1782935360180-7
+[2026-07-01T19:49:20.180Z] [iframe] subkind=pane-reload {"at":"2026-07-01T19:49:20.180Z","iframeSrc":"tauri://localhost/__project/index.html","priorSrc":"tauri://localhost/__project/index.html","stage":"right-listener-fired"}
+[2026-07-01T19:49:20.183Z] [route] phase=entry method=GET path=__startup-ready query=event=pty-menu-changed correlation_id=route-1782935360183-8
+[2026-07-01T19:49:20.183Z] [event-replay-skip] kind=pty-menu-changed reason=no-stored-payload
+[2026-07-01T19:49:20.183Z] [route] phase=entry method=GET path=__startup-ready query=event=turn-state-changed correlation_id=route-1782935360183-10
+[2026-07-01T19:49:20.183Z] [event-replay-skip] kind=turn-state-changed reason=no-stored-payload
+[2026-07-01T19:49:20.183Z] [route] phase=exit method=GET path=__startup-ready status=200 body_size=71 duration_ms=0 correlation_id=route-1782935360183-10
+[2026-07-01T19:49:20.183Z] [route] phase=exit method=GET path=__startup-ready status=200 body_size=69 duration_ms=0 correlation_id=route-1782935360183-8
+[2026-07-01T19:49:20.184Z] [route] phase=entry method=GET path=__startup-ready query=event=turn-state-changed correlation_id=route-1782935360183-9
+[2026-07-01T19:49:20.184Z] [route] phase=entry method=GET path=__startup-ready query=event=settings-changed correlation_id=route-1782935360184-11
+[2026-07-01T19:49:20.184Z] [event-replay-skip] kind=settings-changed reason=no-stored-payload
+[2026-07-01T19:49:20.184Z] [route] phase=exit method=GET path=__startup-ready status=200 body_size=69 duration_ms=0 correlation_id=route-1782935360184-11
+[2026-07-01T19:49:20.184Z] [event-replay-skip] kind=turn-state-changed reason=no-stored-payload
+[2026-07-01T19:49:20.184Z] [route] phase=exit method=GET path=__startup-ready status=200 body_size=71 duration_ms=0 correlation_id=route-1782935360183-9
+[2026-07-01T19:49:20.184Z] [route] phase=entry method=GET path=__startup-ready query=event=pty-menu-changed correlation_id=route-1782935360184-12
+[2026-07-01T19:49:20.184Z] [event-replay-skip] kind=pty-menu-changed reason=no-stored-payload
+[2026-07-01T19:49:20.184Z] [route] phase=exit method=GET path=__startup-ready status=200 body_size=69 duration_ms=0 correlation_id=route-1782935360184-12
+[2026-07-01T19:49:20.186Z] [iframe] subkind=tools-route-boot {"at":"2026-07-01T19:49:20.185Z","current":"#/commits","pathname":"/tools/index.html","saved":"#/commits"}
+[2026-07-01T19:49:20.187Z] [iframe] subkind=pane-reload {"at":"2026-07-01T19:49:20.186Z","elapsedMs":6,"src":"tauri://localhost/__project/index.html","stage":"right-url-resolved"}
+[2026-07-01T19:49:20.187Z] [iframe] subkind=pane-reload {"at":"2026-07-01T19:49:20.186Z","elapsedMs":6,"source":"right-pane-reload","src":"tauri://localhost/__project/index.html?t=1782935360186","stage":"right-src-set"}
+[2026-07-01T19:49:20.187Z] [route] phase=exit method=GET path=__vendor/xmlui-standalone.umd.js status=200 body_size=6228571 duration_ms=7 correlation_id=route-1782935360180-7
+[2026-07-01T19:49:20.192Z] [route] phase=entry method=GET path=index.html query=t=1782935360186 correlation_id=route-1782935360192-13
+[2026-07-01T19:49:20.192Z] [route] phase=exit method=GET path=index.html status=200 body_size=404 duration_ms=0 correlation_id=route-1782935360192-13
+[2026-07-01T19:49:20.594Z] [iframe] subkind=pane-reload {"at":"2026-07-01T19:49:20.593Z","src":"tauri://localhost/__project/index.html?t=1782935360186","stage":"right-load"}
+[2026-07-01T19:49:20.596Z] [iframe] subkind=first-output-seen {"at":"2026-07-01T19:49:20.595Z","value":false}
+[2026-07-01T19:49:20.608Z] [pty-in] gap_ms=440 bytes=13 runs=1 preview="\x1b7\x1b[r\x1b8\x1b[?25h"
+[2026-07-01T19:49:20.608Z] [pty-in] gap_ms=0 bytes=6 runs=1 preview="\x1b[?25l"
+[2026-07-01T19:49:20.608Z] [pty-in] gap_ms=0 bytes=24 preview="\x1b[?2004h\x1b[?1004h\x1b[?2031h"
+[2026-07-01T19:49:20.619Z] [pty-out] bytes=3 preview="\x1b[O" is_structured=false caller_hint=unknown
+[2026-07-01T19:49:20.687Z] [pty-out] bytes=7 preview="\x1b[?1;2c" is_structured=false caller_hint=unknown
+[2026-07-01T19:49:20.687Z] [iframe] subkind=console-log {"args":[{"preview":"XMLUI version: 0.12.30 (built 6/23/2026)","type":"string"}],"at":"2026-07-01T19:49:20.687Z","message":"XMLUI version: 0.12.30 (built 6/23/2026)","stack":""}
+[2026-07-01T19:49:20.688Z] [iframe] subkind=helpers-js-loaded {"at":"2026-07-01T19:49:20.687Z","build":"batch-v2"}
+[2026-07-01T19:49:20.688Z] [route] phase=entry method=GET path=tools/Main.xmlui.xs query= correlation_id=route-1782935360688-14
+[2026-07-01T19:49:20.688Z] [route] phase=exit method=GET path=tools/Main.xmlui.xs status=404 body_size=0 duration_ms=0 correlation_id=route-1782935360688-14
+[2026-07-01T19:49:21.106Z] [pty-in] gap_ms=497 bytes=8 runs=2 preview="\x1b[>0q"
+[2026-07-01T19:49:21.106Z] [pty-in] gap_ms=0 bytes=20 preview="\x1b]0;✳ Claude Code\x07"
+[2026-07-01T19:49:21.106Z] [spinner-period] state=started
+[2026-07-01T19:49:21.129Z] [pty-in] gap_ms=22 bytes=1024 preview="\x1b[38;5;174m▗\x1b[48;5;174m\x1b[38;5;16m ▗   ▖ \x1b[49m\x1b[38;5;174m▖\x1b[12G\x1b[39m\x1b[1mClaude\x1b[1..."
+[2026-07-01T19:49:21.279Z] [iframe] subkind=splitter-restore {"at":"2026-07-01T19:49:21.277Z","key":"commits","raw":"1px","result":"1px"}
+[2026-07-01T19:49:21.279Z] [iframe] subkind=splitter-restore {"at":"2026-07-01T19:49:21.279Z","key":"commits","raw":"1px","result":"1px"}
+[2026-07-01T19:49:21.299Z] [pty-in] gap_ms=170 bytes=11 runs=1 preview="C\x1b[3A\x1b[?25h"
+[2026-07-01T19:49:21.299Z] [pty-in] gap_ms=0 bytes=1024 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[1C\x1b[5A\x1b[38;5;174m▎\x1b[4G\x1b[39mMeet\x1b[9G\x1b[38;5;174m\x1b[1mFable 5\x1b[22m\x1b..."
+[2026-07-01T19:49:21.299Z] [pty-in] gap_ms=0 bytes=103 preview="9Gshortcuts\x1b[19G·\x1b[21G←\x1b[23Gfor\x1b[27Gagents\x1b[63G●\x1b[65Ghigh\x1b[70G·\x1b[72G/effort\x1b[39m..."
+[2026-07-01T19:49:21.520Z] [iframe] subkind=voice-trace {"at":"2026-07-01T19:49:21.519Z","stage":"external-subscribed","totalSubscribers":1}
+[2026-07-01T19:49:21.523Z] [route] phase=entry method=GET path=__enhance/status query= correlation_id=route-1782935361523-15
+[2026-07-01T19:49:21.523Z] [route] phase=entry method=GET path=__right-pane-info query= correlation_id=route-1782935361523-16
+[2026-07-01T19:49:21.523Z] [route] phase=exit method=GET path=__right-pane-info status=200 body_size=120 duration_ms=0 correlation_id=route-1782935361523-16
+[2026-07-01T19:49:21.524Z] [route] phase=entry method=GET path=__inflight query=t=0 correlation_id=route-1782935361524-17
+[2026-07-01T19:49:21.524Z] [route] phase=entry method=GET path=__app-info query= correlation_id=route-1782935361524-18
+[2026-07-01T19:49:21.524Z] [route] phase=exit method=GET path=__inflight status=200 body_size=2 duration_ms=0 correlation_id=route-1782935361524-17
+[2026-07-01T19:49:21.524Z] [route] phase=exit method=GET path=__app-info status=200 body_size=125 duration_ms=0 correlation_id=route-1782935361524-18
+[2026-07-01T19:49:21.524Z] [route] phase=entry method=GET path=__settings query= correlation_id=route-1782935361524-19
+[2026-07-01T19:49:21.525Z] [route] phase=exit method=GET path=__settings status=200 body_size=253 duration_ms=0 correlation_id=route-1782935361524-19
+[2026-07-01T19:49:21.525Z] [route] phase=entry method=GET path=__sessions/list query=limit=20 correlation_id=route-1782935361525-20
+[2026-07-01T19:49:21.526Z] [route] phase=exit method=GET path=__enhance/status status=200 body_size=982 duration_ms=2 correlation_id=route-1782935361523-15
+[2026-07-01T19:49:21.527Z] [route] phase=entry method=GET path=__commits query= correlation_id=route-1782935361527-21
+[2026-07-01T19:49:21.527Z] [route] phase=entry method=GET path=__git/status query= correlation_id=route-1782935361527-22
+[2026-07-01T19:49:21.531Z] [iframe] subkind=paste-image {"at":"2026-07-01T19:49:21.530Z","count":0,"stage":"query-count","target":"message-agent"}
+[2026-07-01T19:49:21.531Z] [sessions] op=list provider=claude visible=3 current_id=3f36253e-2fc9-4e1b-96ef-c0e2dbb6ebe1 limit=20
+[2026-07-01T19:49:21.531Z] [route] phase=exit method=GET path=__sessions/list status=200 body_size=474 duration_ms=6 correlation_id=route-1782935361525-20
+[2026-07-01T19:49:21.531Z] [iframe] subkind=paste-image {"at":"2026-07-01T19:49:21.530Z","count":0,"paths":{"__summary":"array","length":0,"sample":[]},"stage":"query-paths","target":"message-agent"}
+[2026-07-01T19:49:21.542Z] [route] phase=exit method=GET path=__git/status status=500 body_size=181 duration_ms=14 correlation_id=route-1782935361527-22
+[2026-07-01T19:49:21.544Z] [watcher] dispatch=skip path=.git/FETCH_HEAD reason=ignored-dir
+[2026-07-01T19:49:21.655Z] [iframe] subkind=subscriber-changed {"at":"2026-07-01T19:49:21.653Z","context":"talk-session-changed","count":1,"key":"__bramLatestJsonlPushTalkSessionUnsub","op":"subscribe"}
+[2026-07-01T19:49:21.656Z] [iframe] subkind=splitter-save {"at":"2026-07-01T19:49:21.655Z","key":"commits","px":1,"sizes":1,"unit":"px"}
+[2026-07-01T19:49:21.656Z] [route] phase=entry method=GET path=__startup-ready query=event=talk-session-changed correlation_id=route-1782935361656-23
+[2026-07-01T19:49:21.658Z] [route] phase=entry method=GET path=__startup-ready query=event=enhance-status-changed correlation_id=route-1782935361658-24
+[2026-07-01T19:49:21.658Z] [route] phase=entry method=GET path=__startup-ready query=event=sessions-list-changed correlation_id=route-1782935361658-25
+[2026-07-01T19:49:21.658Z] [event-replay-skip] kind=sessions-list-changed reason=no-stored-payload
+[2026-07-01T19:49:21.658Z] [event-replay] kind=enhance-status-changed ts_ms=1782935360172 payload_size=4
+[2026-07-01T19:49:21.658Z] [route] phase=entry method=GET path=__startup-ready query=event=message-bounced correlation_id=route-1782935361658-28
+[2026-07-01T19:49:21.658Z] [route] phase=entry method=GET path=__startup-ready query=event=agent-status-changed correlation_id=route-1782935361658-27
+[2026-07-01T19:49:21.659Z] [event-replay-skip] kind=agent-status-changed reason=no-stored-payload
+[2026-07-01T19:49:21.659Z] [route] phase=entry method=GET path=__startup-ready query=event=inflight-claim-changed correlation_id=route-1782935361658-26
+[2026-07-01T19:49:21.659Z] [route] phase=entry method=GET path=__startup-ready query=event=git-status-changed correlation_id=route-1782935361658-29
+[2026-07-01T19:49:21.659Z] [route] phase=entry method=GET path=__startup-ready query=event=pty-throughput correlation_id=route-1782935361658-30
+[2026-07-01T19:49:21.659Z] [event-replay-skip] kind=message-bounced reason=no-stored-payload
+[2026-07-01T19:49:21.659Z] [route] phase=exit method=GET path=__startup-ready status=200 body_size=107 duration_ms=0 correlation_id=route-1782935361658-24
+[2026-07-01T19:49:21.659Z] [route] phase=exit method=GET path=__startup-ready status=200 body_size=74 duration_ms=0 correlation_id=route-1782935361658-25
+[2026-07-01T19:49:21.659Z] [route] phase=exit method=GET path=__startup-ready status=200 body_size=73 duration_ms=0 correlation_id=route-1782935361658-27
+[2026-07-01T19:49:21.659Z] [event-replay-skip] kind=inflight-claim-changed reason=no-stored-payload
+[2026-07-01T19:49:21.659Z] [route] phase=exit method=GET path=__startup-ready status=200 body_size=75 duration_ms=0 correlation_id=route-1782935361658-26
+[2026-07-01T19:49:21.659Z] [event-replay-skip] kind=git-status-changed reason=no-stored-payload
+[2026-07-01T19:49:21.659Z] [route] phase=exit method=GET path=__startup-ready status=200 body_size=71 duration_ms=0 correlation_id=route-1782935361658-29
+[2026-07-01T19:49:21.659Z] [route] phase=exit method=GET path=__startup-ready status=200 body_size=68 duration_ms=0 correlation_id=route-1782935361658-28
+[2026-07-01T19:49:21.659Z] [event-replay-skip] kind=pty-throughput reason=no-stored-payload
+[2026-07-01T19:49:21.659Z] [route] phase=exit method=GET path=__startup-ready status=200 body_size=67 duration_ms=0 correlation_id=route-1782935361658-30
+[2026-07-01T19:49:21.661Z] [iframe] subkind=heartbeat-drift {"at":"2026-07-01T19:49:21.660Z","drift_ms":646}
+[2026-07-01T19:49:21.661Z] [emit] kind=talk-session-changed payload_size=73522 correlation_id=tsc-1782935361656-1 at_host_ms=1782935361656 source=push
+[2026-07-01T19:49:21.663Z] [iframe] subkind=pane-reload {"at":"2026-07-01T19:49:21.663Z","src":"tauri://localhost/__project/index.html?t=1782935360186","stage":"right-initial-retry-skipped"}
+[2026-07-01T19:49:21.665Z] [event-remember] kind=talk-session-changed payload_size=73522 source=payload
+[2026-07-01T19:49:21.671Z] [route] phase=exit method=GET path=__startup-ready status=200 body_size=85 duration_ms=14 correlation_id=route-1782935361656-23
+[2026-07-01T19:49:21.683Z] [iframe] subkind=event-received {"at":"2026-07-01T19:49:21.682Z","event_name":"enhance-status-changed","subscribers":1}
+[2026-07-01T19:49:21.683Z] [iframe] subkind=subscriber-fired {"at":"2026-07-01T19:49:21.683Z","elapsed_ms":0,"event_name":"enhance-status-changed","subscriber_index":0}
+[2026-07-01T19:49:21.684Z] [iframe] subkind=event-received {"at":"2026-07-01T19:49:21.684Z","at_host_ms":1782935361656,"context":"talk-session-changed","correlation_id":"tsc-1782935361656-1","delta_to_emit_ms":28,"subscribers":1}
+[2026-07-01T19:49:21.685Z] [iframe] subkind=jsonl-fanout {"at":"2026-07-01T19:49:21.684Z","len":66825,"offset":66865,"reset":true,"sid":"3f36253e-2fc9-4e1b-96ef-c0e2dbb6ebe1","source":"push","truncated":false}
+[2026-07-01T19:49:21.685Z] [iframe] subkind=jsonl-broadcast {"at":"2026-07-01T19:49:21.684Z","len":66825,"subscribers":0}
+[2026-07-01T19:49:21.686Z] [iframe] subkind=event-received {"at":"2026-07-01T19:49:21.685Z","event_name":"pty-throughput","subscribers":1}
+[2026-07-01T19:49:21.686Z] [iframe] subkind=subscriber-fired {"at":"2026-07-01T19:49:21.686Z","elapsed_ms":0,"event_name":"pty-throughput","subscriber_index":0}
+[2026-07-01T19:49:21.999Z] [route] phase=exit method=GET path=__commits status=500 body_size=64 duration_ms=471 correlation_id=route-1782935361527-21
+[2026-07-01T19:49:22.169Z] [iframe] subkind=console-error {"args":[{"preview":"[xmlui]","type":"string"},{"preview":"fatal: 'origin' does not appear to be a git repository\nfatal: Could not read from remote repository.\n\nPlease make sure you have the correct access rights\nand the repository exists.\n","type":"string"}],"at":"2026-07-01T19:49:22.168Z","message":"[xmlui] fatal: 'origin' does not appear to be a git repository\nfatal: Could not read from remote repository.\n\nPlease make sure you have the correct access rights\nand the repository exists.\n","stack":""}
+[2026-07-01T19:49:22.259Z] [iframe] subkind=refetch-called {"at":"2026-07-01T19:49:22.258Z","context":"enhance-status-changed"}
+[2026-07-01T19:49:22.262Z] [route] phase=entry method=GET path=__git/status query= correlation_id=route-1782935362262-31
+[2026-07-01T19:49:22.262Z] [route] phase=entry method=GET path=__sessions/list query=limit=20 correlation_id=route-1782935362262-32
+[2026-07-01T19:49:22.262Z] [route] phase=entry method=GET path=__sessions/list query=limit=20 correlation_id=route-1782935362262-33
+[2026-07-01T19:49:22.263Z] [route] phase=entry method=GET path=__enhance/status query= correlation_id=route-1782935362263-34
+[2026-07-01T19:49:22.263Z] [iframe] subkind=subscriber-changed {"at":"2026-07-01T19:49:22.262Z","context":"talk-session-changed","count":0,"key":"__bramLatestJsonlPushTalkSessionUnsub","op":"unsubscribe"}
+[2026-07-01T19:49:22.264Z] [iframe] subkind=subscriber-changed {"at":"2026-07-01T19:49:22.263Z","context":"talk-session-changed","count":1,"key":"__bramLatestJsonlPushTalkSessionUnsub","op":"subscribe"}
+[2026-07-01T19:49:22.264Z] [route] phase=exit method=GET path=__enhance/status status=200 body_size=982 duration_ms=1 correlation_id=route-1782935362263-34
+[2026-07-01T19:49:22.265Z] [iframe] subkind=agent-header-branch {"at":"2026-07-01T19:49:22.264Z","branch":"idle-provider","elapsed":"","lastSeenAgentVerb":"","provider":"claude","source":"","state":"","verb":""}
+[2026-07-01T19:49:22.267Z] [sessions] op=list provider=claude visible=3 current_id=3f36253e-2fc9-4e1b-96ef-c0e2dbb6ebe1 limit=20
+[2026-07-01T19:49:22.267Z] [route] phase=exit method=GET path=__sessions/list status=200 body_size=474 duration_ms=5 correlation_id=route-1782935362262-33
+[2026-07-01T19:49:22.268Z] [sessions] op=list provider=claude visible=3 current_id=3f36253e-2fc9-4e1b-96ef-c0e2dbb6ebe1 limit=20
+[2026-07-01T19:49:22.268Z] [route] phase=exit method=GET path=__sessions/list status=200 body_size=474 duration_ms=6 correlation_id=route-1782935362262-32
+[2026-07-01T19:49:22.276Z] [route] phase=exit method=GET path=__git/status status=500 body_size=181 duration_ms=14 correlation_id=route-1782935362262-31
+[2026-07-01T19:49:22.279Z] [watcher] dispatch=skip path=.git/FETCH_HEAD reason=ignored-dir
+[2026-07-01T19:49:22.537Z] [iframe] subkind=heartbeat-drift {"at":"2026-07-01T19:49:22.536Z","drift_ms":676}
+[2026-07-01T19:49:22.568Z] [iframe] subkind=console-error {"args":[{"preview":"[xmlui]","type":"string"},{"preview":"fatal: your current branch 'main' does not have any commits yet\n","type":"string"}],"at":"2026-07-01T19:49:22.567Z","message":"[xmlui] fatal: your current branch 'main' does not have any commits yet\n","stack":""}
+[2026-07-01T19:49:22.571Z] [route] phase=entry method=GET path=__inflight query=t=1 correlation_id=route-1782935362571-35
+[2026-07-01T19:49:22.571Z] [route] phase=exit method=GET path=__inflight status=200 body_size=2 duration_ms=0 correlation_id=route-1782935362571-35
+[2026-07-01T19:49:22.652Z] [iframe] subkind=agent-switcher {"agentSetting":"claude","at":"2026-07-01T19:49:22.650Z","hasSelect":false,"provider":"claude","stage":"settings-loaded","switching":false}
+[2026-07-01T19:49:22.793Z] [iframe] subkind=console-error {"args":[{"preview":"[xmlui]","type":"string"},{"preview":"fatal: 'origin' does not appear to be a git repository\nfatal: Could not read from remote repository.\n\nPlease make sure you have the correct access rights\nand the repository exists.\n","type":"string"}],"at":"2026-07-01T19:49:22.791Z","message":"[xmlui] fatal: 'origin' does not appear to be a git repository\nfatal: Could not read from remote repository.\n\nPlease make sure you have the correct access rights\nand the repository exists.\n","stack":""}
+[2026-07-01T19:49:22.974Z] [iframe] subkind=refetch-called {"at":"2026-07-01T19:49:22.973Z","context":"header-inflight-claim-changed","tick":1}
+[2026-07-01T19:49:22.975Z] [iframe] subkind=header-inflight-refetch {"at":"2026-07-01T19:49:22.974Z","state":"","tick":1}
+[2026-07-01T19:49:23.169Z] [agent-switch] op=refresh provider=claude source=autostart
+[2026-07-01T19:49:23.169Z] [emit] kind=talk-session-changed payload_size=208 correlation_id=tsc-1782935363169-2 at_host_ms=1782935363169 source=push
+[2026-07-01T19:49:23.170Z] [event-remember] kind=talk-session-changed payload_size=208 source=payload
+[2026-07-01T19:49:23.172Z] [iframe] subkind=event-received {"at":"2026-07-01T19:49:23.170Z","at_host_ms":1782935363169,"context":"talk-session-changed","correlation_id":"tsc-1782935363169-2","delta_to_emit_ms":1,"subscribers":1}
+[2026-07-01T19:49:23.172Z] [iframe] subkind=jsonl-fanout {"at":"2026-07-01T19:49:23.171Z","len":0,"offset":66865,"reset":false,"sid":"3f36253e-2fc9-4e1b-96ef-c0e2dbb6ebe1","source":"push","truncated":false}

@@ -1,0 +1,9 @@
+# Before
+
+`index.html` is effectively empty — no markup renders in the main view.
+
+# After
+
+Add a full-viewport `<iframe src="https://jonudell.info">` to `index.html` so the main view embeds jonudell.info. The iframe fills the window (100% width/height, no border, margin reset) so it reads as the page content rather than a boxed widget.
+
+Note: many sites send `X-Frame-Options: DENY` / `Content-Security-Policy: frame-ancestors`, which browsers honor by refusing to render the frame. If jonudell.info sends either header the pane will show blank — worth a quick check after applying.

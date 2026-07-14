@@ -1,0 +1,8 @@
+{
+  "traces": {
+    "enabled": true
+  },
+  "ui": {
+    "showTargetApp": true
+  }
+}

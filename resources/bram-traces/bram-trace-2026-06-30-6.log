@@ -1,0 +1,539 @@
+[2026-06-30T22:32:42.615Z] [bram-trace] event=session-start pid=33789
+[2026-06-30T22:32:42.615Z] [whisper] env platform=macos arch=aarch64
+[2026-06-30T22:32:42.616Z] [jsonl-turn-end] op=init providers=claude,codex codexMarker=event_msg/task_complete
+[2026-06-30T22:32:42.616Z] [route] phase=entry method=GET path=__app-info query= correlation_id=route-1782858762616-0
+[2026-06-30T22:32:43.091Z] [route] phase=exit method=GET path=__app-info status=200 body_size=125 duration_ms=474 correlation_id=route-1782858762616-0
+[2026-06-30T22:32:43.283Z] [emit] kind=talk-session-changed payload_size=167 correlation_id=tsc-1782858763091-0 at_host_ms=1782858763091 source=push
+[2026-06-30T22:32:43.283Z] [event-remember] kind=talk-session-changed payload_size=167 source=payload
+[2026-06-30T22:32:43.445Z] [watcher] op=session-dirs claude=/Users/jonudell/.claude/projects/-Users-jonudell-sample-target-app codex=/Users/jonudell/.codex/sessions
+[2026-06-30T22:32:43.619Z] [route] phase=entry method=GET path=__settings query= correlation_id=route-1782858763619-1
+[2026-06-30T22:32:43.619Z] [route] phase=exit method=GET path=__settings status=200 body_size=254 duration_ms=0 correlation_id=route-1782858763619-1
+[2026-06-30T22:32:43.621Z] [iframe] subkind=pane-reload {"at":"2026-06-30T22:32:43.620Z","src":"tauri://localhost/__project/index.html","stage":"right-initial-src-set"}
+[2026-06-30T22:32:43.621Z] [iframe] subkind=pane-reload {"at":"2026-06-30T22:32:43.621Z","src":"tauri://localhost/tools/index.html#/transcript","stage":"tools-initial-src-set"}
+[2026-06-30T22:32:43.622Z] [route] phase=entry method=GET path=__startup-ready query=event=right-pane-reload correlation_id=route-1782858763622-2
+[2026-06-30T22:32:43.622Z] [route] phase=entry method=GET path=__startup-ready query=event=tools-pane-reload correlation_id=route-1782858763622-3
+[2026-06-30T22:32:43.622Z] [event-replay-skip] kind=right-pane-reload reason=no-stored-payload
+[2026-06-30T22:32:43.622Z] [event-replay-skip] kind=tools-pane-reload reason=no-stored-payload
+[2026-06-30T22:32:43.622Z] [route] phase=exit method=GET path=__startup-ready status=200 body_size=70 duration_ms=0 correlation_id=route-1782858763622-2
+[2026-06-30T22:32:43.622Z] [route] phase=exit method=GET path=__startup-ready status=200 body_size=70 duration_ms=0 correlation_id=route-1782858763622-3
+[2026-06-30T22:32:43.649Z] [route] phase=entry method=GET path=index.html query= correlation_id=route-1782858763649-4
+[2026-06-30T22:32:43.649Z] [route] phase=exit method=GET path=index.html status=200 body_size=0 duration_ms=0 correlation_id=route-1782858763649-4
+[2026-06-30T22:32:43.682Z] [pty-out] bytes=7 preview="claude\r" is_structured=false caller_hint=agent-autostart
+[2026-06-30T22:32:43.682Z] [agent-switch] op=autostart provider=claude command=claude
+[2026-06-30T22:32:43.682Z] [agent-hint] writer=host reason=autostart provider=claude old_provider= changed=true path=-Users-jonudell-sample-target-app.json result=ok
+[2026-06-30T22:32:43.684Z] [iframe] subkind=pane-reload {"at":"2026-06-30T22:32:43.683Z","src":"tauri://localhost/__project/index.html","stage":"right-load"}
+[2026-06-30T22:32:43.684Z] [pty-in] gap_ms=0 bytes=8 runs=1 preview="claude\r\n"
+[2026-06-30T22:32:43.684Z] [pty-in] gap_ms=0 bytes=76 preview="Bram manages the agent here - use the header switcher to change providers.\r\n"
+[2026-06-30T22:32:43.684Z] [pty-in] gap_ms=0 bytes=8 runs=1 preview="\x1b[?1034h"
+[2026-06-30T22:32:43.684Z] [pty-in] gap_ms=0 bytes=18 preview="bash-3.2$ claude\r\n"
+[2026-06-30T22:32:43.691Z] [watcher] path=-Users-jonudell-sample-target-app.json change=remove dedup=false
+[2026-06-30T22:32:43.691Z] [watcher] dispatch=enhance-status path=-Users-jonudell-sample-target-app.json
+[2026-06-30T22:32:43.691Z] [emit] kind=enhance-status-changed payload_size=0 correlation_id=
+[2026-06-30T22:32:43.691Z] [event-remember] kind=enhance-status-changed payload_size=4 source=signal
+[2026-06-30T22:32:43.692Z] [watcher] dispatch=skip path=-Users-jonudell-sample-target-app.json reason=event-kind
+[2026-06-30T22:32:43.692Z] [watcher] path=-Users-jonudell-sample-target-app.json change=create dedup=false
+[2026-06-30T22:32:43.692Z] [watcher] dispatch=enhance-status path=-Users-jonudell-sample-target-app.json
+[2026-06-30T22:32:43.692Z] [emit] kind=enhance-status-changed payload_size=0 correlation_id=
+[2026-06-30T22:32:43.692Z] [event-remember] kind=enhance-status-changed payload_size=4 source=signal
+[2026-06-30T22:32:43.692Z] [watcher] dispatch=right-pane path=-Users-jonudell-sample-target-app.json
+[2026-06-30T22:32:43.692Z] [emit] kind=right-pane-reload payload_size=0 correlation_id=
+[2026-06-30T22:32:43.692Z] [watcher] path=-Users-jonudell-sample-target-app.json change=modify dedup=false
+[2026-06-30T22:32:43.692Z] [watcher] dispatch=enhance-status path=-Users-jonudell-sample-target-app.json
+[2026-06-30T22:32:43.692Z] [emit] kind=enhance-status-changed payload_size=0 correlation_id=
+[2026-06-30T22:32:43.692Z] [event-remember] kind=enhance-status-changed payload_size=4 source=signal
+[2026-06-30T22:32:43.692Z] [watcher] dispatch=skip path=-Users-jonudell-sample-target-app.json reason=debounce-100ms
+[2026-06-30T22:32:43.700Z] [route] phase=entry method=GET path=__settings query= correlation_id=route-1782858763700-5
+[2026-06-30T22:32:43.701Z] [route] phase=exit method=GET path=__settings status=200 body_size=254 duration_ms=0 correlation_id=route-1782858763700-5
+[2026-06-30T22:32:43.701Z] [route] phase=entry method=GET path=__settings query= correlation_id=route-1782858763701-6
+[2026-06-30T22:32:43.701Z] [route] phase=exit method=GET path=__settings status=200 body_size=254 duration_ms=0 correlation_id=route-1782858763701-6
+[2026-06-30T22:32:43.702Z] [iframe] subkind=pane-reload {"at":"2026-06-30T22:32:43.702Z","iframeSrc":"tauri://localhost/__project/index.html","priorSrc":"tauri://localhost/__project/index.html","stage":"right-listener-fired"}
+[2026-06-30T22:32:43.702Z] [route] phase=entry method=GET path=__vendor/xmlui-standalone.umd.js query=v=1782858763701 correlation_id=route-1782858763702-7
+[2026-06-30T22:32:43.703Z] [route] phase=exit method=GET path=__vendor/xmlui-standalone.umd.js status=200 body_size=6228571 duration_ms=0 correlation_id=route-1782858763702-7
+[2026-06-30T22:32:43.703Z] [route] phase=entry method=GET path=__startup-ready query=event=turn-state-changed correlation_id=route-1782858763703-9
+[2026-06-30T22:32:43.703Z] [route] phase=entry method=GET path=__startup-ready query=event=pty-menu-changed correlation_id=route-1782858763703-8
+[2026-06-30T22:32:43.704Z] [route] phase=entry method=GET path=__startup-ready query=event=settings-changed correlation_id=route-1782858763703-10
+[2026-06-30T22:32:43.704Z] [event-replay-skip] kind=turn-state-changed reason=no-stored-payload
+[2026-06-30T22:32:43.704Z] [event-replay-skip] kind=pty-menu-changed reason=no-stored-payload
+[2026-06-30T22:32:43.704Z] [event-replay-skip] kind=settings-changed reason=no-stored-payload
+[2026-06-30T22:32:43.704Z] [route] phase=exit method=GET path=__startup-ready status=200 body_size=69 duration_ms=0 correlation_id=route-1782858763703-8
+[2026-06-30T22:32:43.704Z] [route] phase=exit method=GET path=__startup-ready status=200 body_size=71 duration_ms=0 correlation_id=route-1782858763703-9
+[2026-06-30T22:32:43.704Z] [route] phase=exit method=GET path=__startup-ready status=200 body_size=69 duration_ms=0 correlation_id=route-1782858763703-10
+[2026-06-30T22:32:43.704Z] [route] phase=entry method=GET path=__startup-ready query=event=pty-menu-changed correlation_id=route-1782858763704-11
+[2026-06-30T22:32:43.704Z] [route] phase=entry method=GET path=__startup-ready query=event=turn-state-changed correlation_id=route-1782858763704-12
+[2026-06-30T22:32:43.704Z] [event-replay-skip] kind=turn-state-changed reason=no-stored-payload
+[2026-06-30T22:32:43.704Z] [route] phase=exit method=GET path=__startup-ready status=200 body_size=71 duration_ms=0 correlation_id=route-1782858763704-12
+[2026-06-30T22:32:43.704Z] [event-replay-skip] kind=pty-menu-changed reason=no-stored-payload
+[2026-06-30T22:32:43.704Z] [route] phase=exit method=GET path=__startup-ready status=200 body_size=69 duration_ms=0 correlation_id=route-1782858763704-11
+[2026-06-30T22:32:43.715Z] [iframe] subkind=tools-route-boot {"at":"2026-06-30T22:32:43.708Z","current":"#/transcript","pathname":"/tools/index.html","saved":"#/transcript"}
+[2026-06-30T22:32:43.842Z] [iframe] subkind=pane-reload {"at":"2026-06-30T22:32:43.841Z","elapsedMs":139,"src":"tauri://localhost/__project/index.html","stage":"right-url-resolved"}
+[2026-06-30T22:32:43.843Z] [iframe] subkind=pane-reload {"at":"2026-06-30T22:32:43.841Z","elapsedMs":139,"source":"right-pane-reload","src":"tauri://localhost/__project/index.html?t=1782858763841","stage":"right-src-set"}
+[2026-06-30T22:32:43.846Z] [iframe] subkind=first-output-seen {"at":"2026-06-30T22:32:43.845Z","value":false}
+[2026-06-30T22:32:43.851Z] [iframe] subkind=console-log {"args":[{"preview":"XMLUI version: 0.12.30 (built 6/23/2026)","type":"string"}],"at":"2026-06-30T22:32:43.850Z","message":"XMLUI version: 0.12.30 (built 6/23/2026)","stack":""}
+[2026-06-30T22:32:43.883Z] [route] phase=entry method=GET path=index.html query=t=1782858763841 correlation_id=route-1782858763883-13
+[2026-06-30T22:32:43.883Z] [route] phase=exit method=GET path=index.html status=200 body_size=0 duration_ms=0 correlation_id=route-1782858763883-13
+[2026-06-30T22:32:43.901Z] [route] phase=entry method=GET path=tools/Main.xmlui.xs query= correlation_id=route-1782858763901-14
+[2026-06-30T22:32:43.901Z] [route] phase=exit method=GET path=tools/Main.xmlui.xs status=404 body_size=0 duration_ms=0 correlation_id=route-1782858763901-14
+[2026-06-30T22:32:43.901Z] [iframe] subkind=pane-reload {"at":"2026-06-30T22:32:43.901Z","src":"tauri://localhost/__project/index.html?t=1782858763841","stage":"right-load"}
+[2026-06-30T22:32:44.170Z] [pty-in] gap_ms=485 bytes=13 runs=1 preview="\x1b7\x1b[r\x1b8\x1b[?25h"
+[2026-06-30T22:32:44.170Z] [pty-in] gap_ms=0 bytes=30 preview="\x1b[?25l\x1b[?2004h\x1b[?1004h\x1b[?2031h"
+[2026-06-30T22:32:44.438Z] [iframe] subkind=voice-trace {"at":"2026-06-30T22:32:44.437Z","stage":"external-subscribed","totalSubscribers":1}
+[2026-06-30T22:32:44.439Z] [route] phase=entry method=GET path=__enhance/status query= correlation_id=route-1782858764439-15
+[2026-06-30T22:32:44.440Z] [route] phase=entry method=GET path=__right-pane-info query= correlation_id=route-1782858764439-16
+[2026-06-30T22:32:44.440Z] [route] phase=exit method=GET path=__right-pane-info status=200 body_size=120 duration_ms=0 correlation_id=route-1782858764439-16
+[2026-06-30T22:32:44.440Z] [route] phase=entry method=GET path=__inflight query=t=0 correlation_id=route-1782858764440-17
+[2026-06-30T22:32:44.440Z] [route] phase=entry method=GET path=__app-info query= correlation_id=route-1782858764440-18
+[2026-06-30T22:32:44.440Z] [route] phase=entry method=GET path=__settings query= correlation_id=route-1782858764440-19
+[2026-06-30T22:32:44.440Z] [route] phase=entry method=GET path=__sessions/list query=limit=20 correlation_id=route-1782858764440-20
+[2026-06-30T22:32:44.440Z] [route] phase=exit method=GET path=__inflight status=200 body_size=2 duration_ms=0 correlation_id=route-1782858764440-17
+[2026-06-30T22:32:44.440Z] [route] phase=exit method=GET path=__app-info status=200 body_size=125 duration_ms=0 correlation_id=route-1782858764440-18
+[2026-06-30T22:32:44.440Z] [route] phase=exit method=GET path=__settings status=200 body_size=254 duration_ms=0 correlation_id=route-1782858764440-19
+[2026-06-30T22:32:44.440Z] [route] phase=exit method=GET path=__enhance/status status=200 body_size=982 duration_ms=0 correlation_id=route-1782858764439-15
+[2026-06-30T22:32:44.442Z] [route] phase=entry method=GET path=__feedback/map query= correlation_id=route-1782858764442-21
+[2026-06-30T22:32:44.442Z] [route] phase=exit method=GET path=__feedback/map status=200 body_size=2 duration_ms=0 correlation_id=route-1782858764442-21
+[2026-06-30T22:32:44.445Z] [iframe] subkind=paste-image {"at":"2026-06-30T22:32:44.444Z","count":0,"stage":"query-count","target":"message-agent"}
+[2026-06-30T22:32:44.445Z] [iframe] subkind=paste-image {"at":"2026-06-30T22:32:44.444Z","count":0,"paths":{"__summary":"array","length":0,"sample":[]},"stage":"query-paths","target":"message-agent"}
+[2026-06-30T22:32:44.510Z] [route] phase=entry method=GET path=__startup-ready query=event=pty-menu-changed correlation_id=route-1782858764510-22
+[2026-06-30T22:32:44.510Z] [event-replay-skip] kind=pty-menu-changed reason=no-stored-payload
+[2026-06-30T22:32:44.510Z] [route] phase=exit method=GET path=__startup-ready status=200 body_size=69 duration_ms=0 correlation_id=route-1782858764510-22
+[2026-06-30T22:32:44.510Z] [route] phase=entry method=GET path=__startup-ready query=event=turn-state-changed correlation_id=route-1782858764510-23
+[2026-06-30T22:32:44.510Z] [event-replay-skip] kind=turn-state-changed reason=no-stored-payload
+[2026-06-30T22:32:44.510Z] [route] phase=exit method=GET path=__startup-ready status=200 body_size=71 duration_ms=0 correlation_id=route-1782858764510-23
+[2026-06-30T22:32:44.512Z] [iframe] subkind=transcript-menu-row {"at":"2026-06-30T22:32:44.511Z","key":"(none)","options":0,"present":false,"stage":"mount","tool":"","transcriptMounted":true}
+[2026-06-30T22:32:44.513Z] [iframe] subkind=subscriber-changed {"at":"2026-06-30T22:32:44.513Z","context":"talk-session-changed","count":1,"key":"__bramLatestJsonlPushTalkSessionUnsub","op":"subscribe"}
+[2026-06-30T22:32:44.514Z] [route] phase=entry method=GET path=__startup-ready query=event=talk-session-changed correlation_id=route-1782858764514-24
+[2026-06-30T22:32:44.514Z] [iframe] subkind=heartbeat-drift {"at":"2026-06-30T22:32:44.514Z","drift_ms":414}
+[2026-06-30T22:32:44.515Z] [route] phase=entry method=GET path=__startup-ready query=event=enhance-status-changed correlation_id=route-1782858764515-25
+[2026-06-30T22:32:44.515Z] [route] phase=entry method=GET path=__startup-ready query=event=inflight-claim-changed correlation_id=route-1782858764515-26
+[2026-06-30T22:32:44.515Z] [event-replay-skip] kind=inflight-claim-changed reason=no-stored-payload
+[2026-06-30T22:32:44.515Z] [route] phase=entry method=GET path=__startup-ready query=event=agent-status-changed correlation_id=route-1782858764515-27
+[2026-06-30T22:32:44.515Z] [event-replay-skip] kind=agent-status-changed reason=no-stored-payload
+[2026-06-30T22:32:44.515Z] [route] phase=exit method=GET path=__startup-ready status=200 body_size=73 duration_ms=0 correlation_id=route-1782858764515-27
+[2026-06-30T22:32:44.515Z] [event-replay] kind=enhance-status-changed ts_ms=1782858763692 payload_size=4
+[2026-06-30T22:32:44.516Z] [route] phase=entry method=GET path=__startup-ready query=event=message-bounced correlation_id=route-1782858764515-28
+[2026-06-30T22:32:44.516Z] [route] phase=exit method=GET path=__startup-ready status=200 body_size=75 duration_ms=0 correlation_id=route-1782858764515-26
+[2026-06-30T22:32:44.516Z] [route] phase=exit method=GET path=__startup-ready status=200 body_size=107 duration_ms=0 correlation_id=route-1782858764515-25
+[2026-06-30T22:32:44.516Z] [event-replay-skip] kind=message-bounced reason=no-stored-payload
+[2026-06-30T22:32:44.516Z] [route] phase=exit method=GET path=__startup-ready status=200 body_size=68 duration_ms=0 correlation_id=route-1782858764515-28
+[2026-06-30T22:32:44.516Z] [route] phase=entry method=GET path=__startup-ready query=event=feedback-drafts-changed correlation_id=route-1782858764516-29
+[2026-06-30T22:32:44.516Z] [event-replay-skip] kind=feedback-drafts-changed reason=no-stored-payload
+[2026-06-30T22:32:44.516Z] [route] phase=exit method=GET path=__startup-ready status=200 body_size=76 duration_ms=0 correlation_id=route-1782858764516-29
+[2026-06-30T22:32:44.516Z] [iframe] subkind=helpers-js-loaded {"at":"2026-06-30T22:32:44.516Z","build":"batch-v2"}
+[2026-06-30T22:32:44.516Z] [route] phase=entry method=GET path=__startup-ready query=event=sessions-list-changed correlation_id=route-1782858764516-30
+[2026-06-30T22:32:44.516Z] [event-replay-skip] kind=sessions-list-changed reason=no-stored-payload
+[2026-06-30T22:32:44.516Z] [route] phase=entry method=GET path=__startup-ready query=event=feedback-history-changed correlation_id=route-1782858764516-31
+[2026-06-30T22:32:44.516Z] [route] phase=exit method=GET path=__startup-ready status=200 body_size=74 duration_ms=0 correlation_id=route-1782858764516-30
+[2026-06-30T22:32:44.516Z] [event-replay-skip] kind=feedback-history-changed reason=no-stored-payload
+[2026-06-30T22:32:44.516Z] [route] phase=exit method=GET path=__startup-ready status=200 body_size=77 duration_ms=0 correlation_id=route-1782858764516-31
+[2026-06-30T22:32:44.518Z] [pty-out] bytes=3 preview="\x1b[I" is_structured=false caller_hint=unknown
+[2026-06-30T22:32:44.518Z] [pty-out] bytes=7 preview="\x1b[?1;2c" is_structured=false caller_hint=unknown
+[2026-06-30T22:32:44.520Z] [iframe] subkind=event-received {"at":"2026-06-30T22:32:44.518Z","event_name":"enhance-status-changed","subscribers":1}
+[2026-06-30T22:32:44.520Z] [iframe] subkind=subscriber-fired {"at":"2026-06-30T22:32:44.518Z","elapsed_ms":0,"event_name":"enhance-status-changed","subscriber_index":0}
+[2026-06-30T22:32:44.649Z] [sessions] op=list provider=claude visible=0 current_id= limit=20
+[2026-06-30T22:32:44.649Z] [route] phase=exit method=GET path=__sessions/list status=200 body_size=2 duration_ms=208 correlation_id=route-1782858764440-20
+[2026-06-30T22:32:44.718Z] [emit] kind=talk-session-changed payload_size=167 correlation_id=tsc-1782858764514-1 at_host_ms=1782858764514 source=push
+[2026-06-30T22:32:44.718Z] [event-remember] kind=talk-session-changed payload_size=167 source=payload
+[2026-06-30T22:32:44.785Z] [pty-in] gap_ms=615 bytes=8 runs=1 preview="\x1b[>0q\x1b[c"
+[2026-06-30T22:32:44.785Z] [pty-in] gap_ms=0 bytes=20 preview="\x1b]0;✳ Claude Code\x07"
+[2026-06-30T22:32:44.786Z] [spinner-period] state=started
+[2026-06-30T22:32:44.804Z] [pty-in] gap_ms=18 bytes=964 preview="\x1b[38;5;174m▗\x1b[48;5;174m\x1b[38;5;16m ▗   ▖ \x1b[49m\x1b[38;5;174m▖\x1b[12G\x1b[39m\x1b[1mClaude\x1b[1..."
+[2026-06-30T22:32:44.814Z] [route] phase=exit method=GET path=__startup-ready status=200 body_size=85 duration_ms=299 correlation_id=route-1782858764514-24
+[2026-06-30T22:32:44.861Z] [iframe] subkind=refetch-called {"at":"2026-06-30T22:32:44.860Z","context":"enhance-status-changed"}
+[2026-06-30T22:32:44.863Z] [route] phase=entry method=GET path=__feedback/map query= correlation_id=route-1782858764863-32
+[2026-06-30T22:32:44.863Z] [route] phase=exit method=GET path=__feedback/map status=200 body_size=2 duration_ms=0 correlation_id=route-1782858764863-32
+[2026-06-30T22:32:44.864Z] [route] phase=entry method=GET path=__feedback/map query= correlation_id=route-1782858764864-33
+[2026-06-30T22:32:44.865Z] [route] phase=exit method=GET path=__feedback/map status=200 body_size=2 duration_ms=0 correlation_id=route-1782858764864-33
+[2026-06-30T22:32:44.865Z] [route] phase=entry method=GET path=__enhance/status query= correlation_id=route-1782858764865-34
+[2026-06-30T22:32:44.866Z] [iframe] subkind=subscriber-changed {"at":"2026-06-30T22:32:44.865Z","context":"talk-session-changed","count":0,"key":"__bramLatestJsonlPushTalkSessionUnsub","op":"unsubscribe"}
+[2026-06-30T22:32:44.866Z] [iframe] subkind=subscriber-changed {"at":"2026-06-30T22:32:44.865Z","context":"talk-session-changed","count":1,"key":"__bramLatestJsonlPushTalkSessionUnsub","op":"subscribe"}
+[2026-06-30T22:32:44.867Z] [iframe] subkind=agent-header-branch {"at":"2026-06-30T22:32:44.866Z","branch":"idle-provider","elapsed":"","lastSeenAgentVerb":"","provider":"claude","source":"","state":"","verb":""}
+[2026-06-30T22:32:44.867Z] [route] phase=exit method=GET path=__enhance/status status=200 body_size=982 duration_ms=1 correlation_id=route-1782858764865-34
+[2026-06-30T22:32:44.867Z] [iframe] subkind=event-received {"at":"2026-06-30T22:32:44.867Z","at_host_ms":1782858764514,"context":"talk-session-changed","correlation_id":"tsc-1782858764514-1","delta_to_emit_ms":353,"subscribers":1}
+[2026-06-30T22:32:44.868Z] [iframe] subkind=jsonl-fanout {"at":"2026-06-30T22:32:44.867Z","len":0,"offset":0,"reset":true,"sid":"","source":"push","truncated":false}
+[2026-06-30T22:32:44.868Z] [iframe] subkind=jsonl-broadcast {"at":"2026-06-30T22:32:44.867Z","len":0,"subscribers":1}
+[2026-06-30T22:32:44.933Z] [route] phase=entry method=GET path=__inflight query=t=1 correlation_id=route-1782858764933-35
+[2026-06-30T22:32:44.933Z] [route] phase=exit method=GET path=__inflight status=200 body_size=2 duration_ms=0 correlation_id=route-1782858764933-35
+[2026-06-30T22:32:44.966Z] [iframe] subkind=agent-switcher {"agentSetting":"claude","at":"2026-06-30T22:32:44.965Z","hasSelect":false,"provider":"claude","stage":"settings-loaded","switching":false}
+[2026-06-30T22:32:45.054Z] [pty-in] gap_ms=250 bytes=199 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[50C\x1b[1A\x1b[K\r\r\n\x1b[20G\x1b[38;5;220mUpdate\x1b[27Gavailable!\x1b[38GRun:\x1b[43..."
+[2026-06-30T22:32:45.122Z] [iframe] subkind=refetch-called {"at":"2026-06-30T22:32:45.121Z","context":"header-inflight-claim-changed","tick":1}
+[2026-06-30T22:32:45.123Z] [iframe] subkind=header-inflight-refetch {"at":"2026-06-30T22:32:45.122Z","state":"","tick":1}
+[2026-06-30T22:32:45.123Z] [iframe] subkind=pane-reload {"at":"2026-06-30T22:32:45.123Z","src":"tauri://localhost/__project/index.html?t=1782858763841","stage":"right-initial-retry-skipped"}
+[2026-06-30T22:32:46.687Z] [agent-switch] op=refresh provider=claude source=autostart
+[2026-06-30T22:32:46.850Z] [emit] kind=talk-session-changed payload_size=167 correlation_id=tsc-1782858766687-2 at_host_ms=1782858766687 source=push
+[2026-06-30T22:32:46.850Z] [event-remember] kind=talk-session-changed payload_size=167 source=payload
+[2026-06-30T22:32:46.851Z] [iframe] subkind=event-received {"at":"2026-06-30T22:32:46.851Z","at_host_ms":1782858766687,"context":"talk-session-changed","correlation_id":"tsc-1782858766687-2","delta_to_emit_ms":164,"subscribers":1}
+[2026-06-30T22:32:46.852Z] [iframe] subkind=jsonl-fanout {"at":"2026-06-30T22:32:46.851Z","len":0,"offset":0,"reset":true,"sid":"","source":"push","truncated":false}
+[2026-06-30T22:32:46.852Z] [iframe] subkind=jsonl-broadcast {"at":"2026-06-30T22:32:46.851Z","len":0,"subscribers":1}
+[2026-06-30T22:32:51.610Z] [pty-out] bytes=3 preview="\x1b[I" is_structured=false caller_hint=unknown
+[2026-06-30T22:32:51.610Z] [spinner-period] state=ended duration_ms=6824
+[2026-06-30T22:32:51.700Z] [turn-end] source=pty-turn-activity-stop silence_ms=6824
+[2026-06-30T22:32:51.700Z] [emit] kind=agent-turn-end payload_size=0 correlation_id=
+[2026-06-30T22:32:51.700Z] [agent-status] op=skip-clear source=pty-turn-activity-stop silence_ms=6824 menu_pending=false post_escape=false
+[2026-06-30T22:32:54.001Z] [iframe] subkind=dom-click {"ariaLabel":"","at":"2026-06-30T22:32:54.000Z","disabled":false,"role":"","tagName":"BUTTON","x":166,"y":863}
+[2026-06-30T22:32:54.002Z] [iframe] subkind=voice-trace {"at":"2026-06-30T22:32:54.002Z","current":"","stage":"setTarget-enter","target":"message-agent"}
+[2026-06-30T22:32:54.003Z] [voice] stage=unknown {"at":"2026-06-30T22:32:54.002Z","prev":"","subkind":"paste-target-mirror","value":"message-agent"}
+[2026-06-30T22:32:54.031Z] [iframe] subkind=voice-input {"at":"2026-06-30T22:32:54.030Z","stage":"target","target":"message-agent"}
+[2026-06-30T22:32:54.031Z] [iframe] subkind=voice-trace {"at":"2026-06-30T22:32:54.031Z","stage":"setTarget-exit","target":"message-agent"}
+[2026-06-30T22:32:54.033Z] [iframe] subkind=voice-trace {"activeSession":false,"activeTarget":"","at":"2026-06-30T22:32:54.032Z","recording":false,"stage":"toggle-enter","target":"message-agent"}
+[2026-06-30T22:32:54.033Z] [iframe] subkind=voice-input {"at":"2026-06-30T22:32:54.033Z","stage":"start","target":"message-agent"}
+[2026-06-30T22:32:54.033Z] [iframe] subkind=voice-trace {"at":"2026-06-30T22:32:54.033Z","stage":"toggle-start-branch","target":"message-agent"}
+[2026-06-30T22:32:54.033Z] [iframe] subkind=voice-trace {"at":"2026-06-30T22:32:54.033Z","stage":"toggle-calling-voiceStart","target":"message-agent"}
+[2026-06-30T22:32:54.034Z] [voice] stage=voiceStart {"at":"2026-06-30T22:32:54.033Z","requestId":"voice-1782858774033-xdy7eel7sd","target":"message-agent"}
+[2026-06-30T22:32:54.034Z] [iframe] subkind=voice-trace {"at":"2026-06-30T22:32:54.034Z","returning":true,"stage":"toggle-exit-start"}
+[2026-06-30T22:32:54.034Z] [voice-host] stage=iframe-voice-start {"at":"2026-06-30T22:32:54.034Z","requestId":"voice-1782858774033-xdy7eel7sd"}
+[2026-06-30T22:32:54.035Z] [voice-host] stage=startRecording-enter {"activeWas":null,"at":"2026-06-30T22:32:54.035Z","requestId":"voice-1782858774033-xdy7eel7sd","target":"iframe"}
+[2026-06-30T22:32:54.035Z] [voice-host] stage=ensure-server-enter {"at":"2026-06-30T22:32:54.035Z"}
+[2026-06-30T22:32:54.050Z] [voice-host] stage=whisper-preflight {"at":"2026-06-30T22:32:54.050Z","httpStatus":200,"ready":true}
+[2026-06-30T22:32:54.051Z] [voice-host] stage=ensure-server-ready {"at":"2026-06-30T22:32:54.050Z","elapsedMs":15,"source":"preflight"}
+[2026-06-30T22:32:54.345Z] [iframe] subkind=heartbeat-batch {"at":"2026-06-30T22:32:54.344Z","avgDriftMs":13,"fires":50,"maxDriftMs":414,"spanMs":10444,"spikes":1,"sumDriftMs":645}
+[2026-06-30T22:32:54.713Z] [voice-host] stage=getUserMedia-ok {"at":"2026-06-30T22:32:54.629Z","requestId":"voice-1782858774033-xdy7eel7sd","tracks":1}
+[2026-06-30T22:32:54.713Z] [voice-host] stage=mediaRecorder-start {"at":"2026-06-30T22:32:54.630Z","requestId":"voice-1782858774033-xdy7eel7sd"}
+[2026-06-30T22:32:54.713Z] [voice] stage=voice-recording-started {"at":"2026-06-30T22:32:54.630Z","requestId":"voice-1782858774033-xdy7eel7sd"}
+[2026-06-30T22:32:54.713Z] [iframe] subkind=voice-trace {"at":"2026-06-30T22:32:54.630Z","stage":"voiceStart-cb-enter"}
+[2026-06-30T22:32:54.713Z] [iframe] subkind=voice-input {"at":"2026-06-30T22:32:54.657Z","stage":"recording-started","target":"terminal"}
+[2026-06-30T22:32:54.715Z] [iframe] subkind=voice-trace {"at":"2026-06-30T22:32:54.657Z","stage":"voiceStart-cb-exit"}
+[2026-06-30T22:32:54.791Z] [pty-in] gap_ms=9737 bytes=4 runs=1 preview="\x1b(B\x0f"
+[2026-06-30T22:32:54.791Z] [pty-in] gap_ms=0 bytes=42 preview="\x1b[?25l\x1b[2D\x1b[5B\x1b[2K\x1b[G\x1b[1A\x1b[K\x1b[2C\x1b[4A\x1b[?25h"
+[2026-06-30T22:33:02.646Z] [iframe] subkind=dom-click {"ariaLabel":"","at":"2026-06-30T22:33:02.645Z","disabled":false,"role":"","tagName":"BUTTON","x":162,"y":861}
+[2026-06-30T22:33:02.647Z] [iframe] subkind=voice-trace {"at":"2026-06-30T22:33:02.646Z","current":"message-agent","stage":"setTarget-enter","target":"message-agent"}
+[2026-06-30T22:33:02.647Z] [voice] stage=unknown {"at":"2026-06-30T22:33:02.647Z","prev":"message-agent","subkind":"paste-target-mirror","value":"message-agent"}
+[2026-06-30T22:33:02.647Z] [iframe] subkind=voice-trace {"at":"2026-06-30T22:33:02.647Z","stage":"setTarget-noop","target":"message-agent"}
+[2026-06-30T22:33:02.649Z] [iframe] subkind=voice-trace {"activeSession":true,"activeTarget":"message-agent","at":"2026-06-30T22:33:02.648Z","recording":true,"stage":"toggle-enter","target":"message-agent"}
+[2026-06-30T22:33:02.733Z] [iframe] subkind=voice-input {"at":"2026-06-30T22:33:02.732Z","stage":"processing-start","target":"message-agent"}
+[2026-06-30T22:33:02.733Z] [iframe] subkind=voice-trace {"at":"2026-06-30T22:33:02.732Z","stage":"toggle-calling-voiceStop","target":"message-agent"}
+[2026-06-30T22:33:02.733Z] [voice] stage=voiceStop {"at":"2026-06-30T22:33:02.733Z","requestId":"voice-1782858774033-xdy7eel7sd","stopAtMs":1782858782733,"target":"message-agent"}
+[2026-06-30T22:33:02.733Z] [iframe] subkind=voice-trace {"at":"2026-06-30T22:33:02.733Z","returning":false,"stage":"toggle-exit-stop"}
+[2026-06-30T22:33:02.734Z] [voice-host] stage=iframe-voice-stop {"at":"2026-06-30T22:33:02.733Z","requestId":"voice-1782858774033-xdy7eel7sd","stopAtMs":1782858782733,"stopToParentReceiveMs":0}
+[2026-06-30T22:33:02.734Z] [voice-host] stage=stopRecording {"at":"2026-06-30T22:33:02.734Z","mediaRecorderState":"recording","requestId":"voice-1782858774033-xdy7eel7sd","source":"iframe-message","stopAtMs":1782858782733,"stopToParentReceiveMs":1}
+[2026-06-30T22:33:02.753Z] [voice-host] stage=mediaRecorder-data {"at":"2026-06-30T22:33:02.752Z","chunkSize":184988,"requestId":"voice-1782858774033-xdy7eel7sd"}
+[2026-06-30T22:33:02.779Z] [voice-host] stage=mediaRecorder-onstop {"at":"2026-06-30T22:33:02.753Z","blobSize":184988,"codecHint":"default","mediaRecorderState":"inactive","mimeType":"audio/mp4","requestId":"voice-1782858774033-xdy7eel7sd","stopAtMs":1782858782733,"stopToOnstopMs":19}
+[2026-06-30T22:33:02.780Z] [voice-host] stage=whisper-request {"at":"2026-06-30T22:33:02.753Z","blobSize":184988,"requestId":"voice-1782858774033-xdy7eel7sd","stopAtMs":1782858782733,"stopToRequestMs":20}
+[2026-06-30T22:33:03.149Z] [voice-host] stage=whisper-response {"at":"2026-06-30T22:33:03.148Z","elapsedMs":395,"httpStatus":200,"requestId":"voice-1782858774033-xdy7eel7sd","stopAtMs":1782858782733,"stopToResponseMs":415,"transcriptLength":57,"transcriptPreview":"Sort the files here, including .files\n by size descending"}
+[2026-06-30T22:33:03.150Z] [voice-host] stage=deliverTranscript {"at":"2026-06-30T22:33:03.149Z","requestId":"voice-1782858774033-xdy7eel7sd","stopAtMs":1782858782733,"stopToDeliverMs":416,"target":"iframe","transcriptLength":57,"transcriptPreview":"Sort the files here, including .files\n by size descending"}
+[2026-06-30T22:33:03.151Z] [voice] stage=voice-into-result {"at":"2026-06-30T22:33:03.150Z","parentStopToDeliverMs":416,"requestId":"voice-1782858774033-xdy7eel7sd","stopAtMs":1782858782733,"stopToResultMs":417,"target":"message-agent","transcriptLength":57,"transcriptPreview":"Sort the files here, including .files\n by size descending"}
+[2026-06-30T22:33:03.152Z] [iframe] subkind=voice-trace {"at":"2026-06-30T22:33:03.151Z","deliveryTarget":"message-agent","stage":"voiceStop-cb-enter","tLen":57,"target":"message-agent"}
+[2026-06-30T22:33:03.221Z] [iframe] subkind=voice-trace {"at":"2026-06-30T22:33:03.220Z","stage":"voiceStop-cb-text-target-branch","target":"message-agent"}
+[2026-06-30T22:33:03.246Z] [iframe] subkind=voice-trace {"at":"2026-06-30T22:33:03.245Z","stage":"voiceStop-cb-after-text-assign"}
+[2026-06-30T22:33:03.246Z] [iframe] subkind=voice-trace {"at":"2026-06-30T22:33:03.245Z","stage":"setLatest-enter","tLen":57}
+[2026-06-30T22:33:03.246Z] [iframe] subkind=voice-trace {"at":"2026-06-30T22:33:03.246Z","stage":"external-event-received","subscribers":1,"tLen":57}
+[2026-06-30T22:33:03.246Z] [iframe] subkind=voice-trace {"at":"2026-06-30T22:33:03.246Z","hasEvent":true,"stage":"external-fire"}
+[2026-06-30T22:33:03.247Z] [iframe] subkind=voice-trace {"at":"2026-06-30T22:33:03.246Z","stage":"setLatest-dispatched"}
+[2026-06-30T22:33:03.247Z] [iframe] subkind=voice-trace {"at":"2026-06-30T22:33:03.246Z","stage":"voiceStop-cb-after-setLatest"}
+[2026-06-30T22:33:03.264Z] [iframe] subkind=voice-trace {"at":"2026-06-30T22:33:03.263Z","hasComponent":true,"stage":"windowAppend-enter","tLen":57}
+[2026-06-30T22:33:03.264Z] [iframe] subkind=voice-trace {"at":"2026-06-30T22:33:03.264Z","currentLen":0,"nextLen":56,"stage":"windowAppend-calling-setValue"}
+[2026-06-30T22:33:03.265Z] [iframe] subkind=voice-trace {"at":"2026-06-30T22:33:03.264Z","stage":"windowAppend-after-setValue"}
+[2026-06-30T22:33:03.266Z] [pty-out] bytes=3 preview="\x1b[O" is_structured=false caller_hint=unknown
+[2026-06-30T22:33:03.285Z] [iframe] subkind=voice-trace {"at":"2026-06-30T22:33:03.284Z","current":"message-agent","stage":"setTarget-enter","target":"message-agent"}
+[2026-06-30T22:33:03.285Z] [voice] stage=unknown {"at":"2026-06-30T22:33:03.284Z","prev":"message-agent","subkind":"paste-target-mirror","value":"message-agent"}
+[2026-06-30T22:33:03.285Z] [iframe] subkind=voice-trace {"at":"2026-06-30T22:33:03.285Z","stage":"setTarget-noop","target":"message-agent"}
+[2026-06-30T22:33:03.318Z] [iframe] subkind=voice-trace {"at":"2026-06-30T22:33:03.317Z","stage":"voiceStop-cb-after-bumpSeq"}
+[2026-06-30T22:33:03.319Z] [iframe] subkind=voice-input {"at":"2026-06-30T22:33:03.318Z","requestId":"voice-1782858774033-xdy7eel7sd","stage":"stop","stopAtMs":1782858782733,"stopToResultMs":417,"target":"message-agent"}
+[2026-06-30T22:33:03.319Z] [iframe] subkind=voice-input {"at":"2026-06-30T22:33:03.318Z","stage":"processing-end","target":"terminal"}
+[2026-06-30T22:33:03.319Z] [iframe] subkind=voice-trace {"at":"2026-06-30T22:33:03.318Z","stage":"voiceStop-cb-exit"}
+[2026-06-30T22:33:04.395Z] [iframe] subkind=heartbeat-batch {"at":"2026-06-30T22:33:04.395Z","avgDriftMs":1,"fires":50,"maxDriftMs":9,"spanMs":9850,"spikes":0,"sumDriftMs":50}
+[2026-06-30T22:33:05.449Z] [iframe] subkind=dom-click {"ariaLabel":"","at":"2026-06-30T22:33:05.448Z","disabled":false,"role":"","tagName":"BUTTON","x":691,"y":865}
+[2026-06-30T22:33:05.451Z] [iframe] subkind=paste-image {"at":"2026-06-30T22:33:05.450Z","consumeTarget":"message-agent","pendingBefore":{"__summary":"array","length":0,"sample":[]},"requestedTarget":"message-agent","stage":"with-markers","voiceTarget":""}
+[2026-06-30T22:33:05.451Z] [iframe] subkind=paste-image {"at":"2026-06-30T22:33:05.451Z","consumed":{"__summary":"array","length":0,"sample":[]},"reason":"no-current-turn","retained":{"__summary":"array","length":0,"sample":[]},"stage":"consume","target":"message-agent"}
+[2026-06-30T22:33:05.452Z] [iframe] subkind=message-agent-submit {"at":"2026-06-30T22:33:05.451Z","chars":56,"sentAt":1782858785451,"stage":"before-toTurn"}
+[2026-06-30T22:33:05.452Z] [iframe] subkind=to-turn {"at":"2026-06-30T22:33:05.451Z","stage":"source","textLength":56,"textPreview":"Sort the files here, including .files by size descending"}
+[2026-06-30T22:33:05.452Z] [iframe] subkind=to-turn {"at":"2026-06-30T22:33:05.452Z","stage":"sink","textLength":56,"textPreview":"Sort the files here, including .files by size descending"}
+[2026-06-30T22:33:05.453Z] [pty-intent] op=enqueue id=intent-1782858785453-0 kind=toTurn bytes=56
+[2026-06-30T22:33:05.453Z] [pty-out] bytes=71 preview="\x1b\x15\x1b[200~Sort the files here, including .files by size descending\x1b[201~\r" is_structured=false caller_hint=pty-intent-toTurn
+[2026-06-30T22:33:05.453Z] [pty-intent] op=drain wrote=1 remaining=0
+[2026-06-30T22:33:05.454Z] [iframe] subkind=message-agent-submit {"at":"2026-06-30T22:33:05.452Z","chars":56,"sentAt":1782858785451,"stage":"after-toTurn"}
+[2026-06-30T22:33:05.459Z] [pty-in] gap_ms=10667 bytes=4 runs=1 preview="\x1b(B\x0f"
+[2026-06-30T22:33:05.459Z] [pty-in] gap_ms=0 bytes=223 preview="\x1b[?25l\x1b[2D\x1b[4B\x1b[2K\x1b[G\x1b[1A\r\x1b[2C\x1b[3ASort the files here, including .files\x1b[41Gby\x1b[..."
+[2026-06-30T22:33:05.494Z] [iframe] subkind=send-capture {"at":"2026-06-30T22:33:05.494Z","blockTop":-1,"escId":"send-1782858785493-1","firstOutputSeen":false,"menuPresent":false,"meta":{"baseY":0,"bufLen":61,"header":"","liveRows":61,"optionCount":0,"termRows":61},"rows":["","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","",""],"source":"pty-intent-toTurn","stage":"at-send"}
+[2026-06-30T22:33:05.537Z] [watcher] dispatch=skip path=resources/.pty-intent.jsonl reason=ignored-dir
+[2026-06-30T22:33:05.537Z] [watcher] dispatch=skip path=resources/.pty-intent.jsonl reason=event-kind
+[2026-06-30T22:33:05.537Z] [watcher] dispatch=skip path=resources/.pty-intent.jsonl reason=ignored-dir
+[2026-06-30T22:33:05.565Z] [pty-in] gap_ms=106 bytes=20 preview="\x1b]0;⠂ Claude Code\x07"
+[2026-06-30T22:33:05.566Z] [spinner-period] state=started
+[2026-06-30T22:33:05.571Z] [pty-in] gap_ms=5 bytes=834 preview="\x1b[?25l\x1b[58D\x1b[3B\r\x1b[4A\x1b[48;5;237m\x1b[38;5;239m❯ \x1b[38;5;231mSort the files here, incl..."
+[2026-06-30T22:33:05.675Z] [pty-in] gap_ms=103 bytes=82 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[6A\x1b[38;5;174m✳\x1b[3G\x1b[38;5;216mCo\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b[?25h"
+[2026-06-30T22:33:05.742Z] [pty-in] gap_ms=67 bytes=67 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[4C\x1b[6A\x1b[38;5;216mo\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b[?25h"
+[2026-06-30T22:33:05.811Z] [pty-in] gap_ms=68 bytes=86 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[6A\x1b[38;5;174m✢\x1b[3GC\x1b[6G\x1b[38;5;216mk\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b[..."
+[2026-06-30T22:33:05.862Z] [pty-in] gap_ms=51 bytes=83 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[3C\x1b[6A\x1b[38;5;174mo\x1b[7G\x1b[38;5;216mi\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b[?..."
+[2026-06-30T22:33:05.931Z] [pty-in] gap_ms=69 bytes=85 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[4C\x1b[6A\x1b[38;5;174mok\x1b[8G\x1b[38;5;216mng\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b..."
+[2026-06-30T22:33:05.931Z] [emit] kind=agent-status-changed payload_size=142 correlation_id= at_host_ms= state=working source=working-fallback
+[2026-06-30T22:33:05.931Z] [event-remember] kind=agent-status-changed payload_size=142 source=payload
+[2026-06-30T22:33:05.932Z] [turn-state] from=idle to=working provider=claude turn=1782858785553 source=working-fallback reason=working menu= jsonlReason= emitted=true
+[2026-06-30T22:33:05.932Z] [emit] kind=turn-state-changed payload_size=257 correlation_id= at_host_ms= source=working-fallback
+[2026-06-30T22:33:05.932Z] [event-remember] kind=turn-state-changed payload_size=257 source=payload
+[2026-06-30T22:33:06.000Z] [pty-in] gap_ms=68 bytes=88 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[6A\x1b[38;5;174m·\x1b[7Gi\x1b[10G\x1b[38;5;216m…\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b..."
+[2026-06-30T22:33:06.069Z] [pty-in] gap_ms=68 bytes=67 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[7C\x1b[6A\x1b[38;5;174mn\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b[?25h"
+[2026-06-30T22:33:06.126Z] [pty-in] gap_ms=56 bytes=70 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[8C\x1b[6A\x1b[38;5;174mg…\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b[?25h"
+[2026-06-30T22:33:06.290Z] [iframe] subkind=send-capture {"at":"2026-06-30T22:33:06.245Z","chunkCount":5,"chunks":[{"dtMs":1,"len":223,"text":"\\x1b[?25l\\x1b[2D\\x1b[4B\\x1b[2K\\x1b[G\\x1b[1A\\r\\x1b[2C\\x1b[3ASort the files here, including .files\\x1b[41Gby\\x1b[44Gsize\\x1b[49Gdescending\\r\\x1b[2C\\x1b[2B                 \\x1b[38;5;220mUpdate available! Run: \\x1b[1mbrew upgrade claude-code\\r\\x1b[1B\\x1b[22m\\x1b[39m\\x1b[K\\x1b[58C\\x1b[3A\\x1b[?25h"},{"dtMs":73,"len":20,"text":"\\x1b]0;\\xe2\\xa0\\x82 Claude Code\\x07"},{"dtMs":79,"len":834,"text":"\\x1b[?25l\\x1b[58D\\x1b[3B\\r\\x1b[4A\\x1b[48;5;237m\\x1b[38;5;239m\\xe2\\x9d\\xaf \\x1b[38;5;231mSort the files here, including .files by size descending\\x1b[39m          \\r\\x1b[1B\\x1b[49m\\x1b[K\\r\\x1b[1B\\x1b[38;5;174m\\xe2\\x9c\\xb6\\x1b[39m \\x1b[38;5;174mCooking\\xe2\\x80\\xa6 \\x1b[39m\\x1b[K\\r\\x1b[19C\\x1b[1B\\x1b[K\\r\\r\\n\\x1b[38;5;244m\\xe2\\x94\\x80\\xe2\\x94\\x80\\xe2\\x94\\x80\\xe2\\x94\\x80\\xe2\\x94\\x80\\xe2\\x94\\x80\\xe2\\x94…"},{"dtMs":182,"len":82,"text":"\\x1b[?25l\\x1b[2D\\x1b[3B\\r\\x1b[6A\\x1b[38;5;174m\\xe2\\x9c\\xb3\\x1b[3G\\x1b[38;5;216mCo\\x1b[39m\\r\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\x1b[2C\\x1b[3A\\x1b[?25h"},{"dtMs":250,"len":67,"text":"\\x1b[?25l\\x1b[2D\\x1b[3B\\r\\x1b[4C\\x1b[6A\\x1b[38;5;216mo\\x1b[39m\\r\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\x1b[2C\\x1b[3A\\x1b[?25h"}],"escId":"send-1782858785493-1","stage":"post-bytes","totalBytes":1226,"windowMs":750}
+[2026-06-30T22:33:06.291Z] [iframe] subkind=send-capture {"at":"2026-06-30T22:33:06.246Z","changed":false,"escId":"send-1782858785493-1","rows":["","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","",""],"stage":"settle"}
+[2026-06-30T22:33:06.293Z] [iframe] subkind=event-received {"at":"2026-06-30T22:33:06.292Z","event_name":"agent-status-changed","subscribers":1}
+[2026-06-30T22:33:06.293Z] [iframe] subkind=agent-header-status-loaded {"at":"2026-06-30T22:33:06.293Z","elapsed":"0s","provider":"claude","source":"working-fallback","state":"working","verb":""}
+[2026-06-30T22:33:06.293Z] [iframe] subkind=subscriber-fired {"at":"2026-06-30T22:33:06.293Z","elapsed_ms":0,"event_name":"agent-status-changed","subscriber_index":0}
+[2026-06-30T22:33:06.294Z] [iframe] subkind=event-received {"at":"2026-06-30T22:33:06.293Z","event_name":"turn-state-changed","subscribers":3}
+[2026-06-30T22:33:06.294Z] [iframe] subkind=transcript-menu-row {"at":"2026-06-30T22:33:06.293Z","key":"(none)","options":0,"present":false,"stage":"source","tool":"","transcriptMounted":true}
+[2026-06-30T22:33:06.294Z] [iframe] subkind=listener-fired {"assignedMenu":"","at":"2026-06-30T22:33:06.294Z","at_host_ms":0,"cache_source":"","context":"turn-state-changed","delta_to_emit_ms":-1,"hasSignature":false,"last_cache_source":"setAgentMenuFromTurnState","last_host_ms":1782858786294,"menu":"","menuId":"(none)","phase":"working","signatureChars":0,"source":"working-fallback","stale":false,"suppressFallback":true,"surface":"agent-menu","tool":""}
+[2026-06-30T22:33:06.294Z] [iframe] subkind=subscriber-fired {"at":"2026-06-30T22:33:06.294Z","elapsed_ms":0,"event_name":"turn-state-changed","subscriber_index":0}
+[2026-06-30T22:33:06.294Z] [iframe] subkind=subscriber-fired {"at":"2026-06-30T22:33:06.294Z","elapsed_ms":1,"event_name":"turn-state-changed","subscriber_index":1}
+[2026-06-30T22:33:06.295Z] [iframe] subkind=subscriber-fired {"at":"2026-06-30T22:33:06.294Z","elapsed_ms":0,"event_name":"turn-state-changed","subscriber_index":2}
+[2026-06-30T22:33:06.350Z] [route] phase=entry method=GET path=__sessions/list query=limit=20 correlation_id=route-1782858786350-36
+[2026-06-30T22:33:06.351Z] [iframe] subkind=agent-header-branch {"at":"2026-06-30T22:33:06.350Z","branch":"working","elapsed":"0s","lastSeenAgentVerb":"","provider":"claude","source":"working-fallback","state":"working","verb":""}
+[2026-06-30T22:33:06.351Z] [sessions] op=list provider=claude visible=1 current_id=6cba45c1-b278-4adb-8d0b-9a4381a1a6d1 limit=20
+[2026-06-30T22:33:06.351Z] [route] phase=exit method=GET path=__sessions/list status=200 body_size=181 duration_ms=0 correlation_id=route-1782858786350-36
+[2026-06-30T22:33:06.385Z] [pty-in] gap_ms=259 bytes=65 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[6A\x1b[38;5;174m✢\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b[?25h"
+[2026-06-30T22:33:06.405Z] [route] phase=entry method=GET path=__inflight query=t=2 correlation_id=route-1782858786405-37
+[2026-06-30T22:33:06.405Z] [route] phase=exit method=GET path=__inflight status=200 body_size=2 duration_ms=0 correlation_id=route-1782858786405-37
+[2026-06-30T22:33:06.542Z] [iframe] subkind=header-inflight-refetch {"at":"2026-06-30T22:33:06.541Z","state":"working","tick":2}
+[2026-06-30T22:33:06.751Z] [pty-in] gap_ms=366 bytes=20 preview="\x1b]0;⠐ Claude Code\x07"
+[2026-06-30T22:33:06.751Z] [emit] kind=agent-status-changed payload_size=142 correlation_id= at_host_ms= state=working source=working-fallback
+[2026-06-30T22:33:06.751Z] [event-remember] kind=agent-status-changed payload_size=142 source=payload
+[2026-06-30T22:33:06.751Z] [turn-state] from=working to=working provider=claude turn=1782858785553 source=working-fallback reason=working menu= jsonlReason= emitted=false
+[2026-06-30T22:33:06.752Z] [pty-in] gap_ms=0 bytes=65 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[6A\x1b[38;5;174m✶\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b[?25h"
+[2026-06-30T22:33:06.756Z] [iframe] subkind=event-received {"at":"2026-06-30T22:33:06.755Z","event_name":"agent-status-changed","subscribers":1}
+[2026-06-30T22:33:06.756Z] [iframe] subkind=agent-header-status-loaded {"at":"2026-06-30T22:33:06.755Z","elapsed":"1s","provider":"claude","source":"working-fallback","state":"working","verb":""}
+[2026-06-30T22:33:06.756Z] [iframe] subkind=subscriber-fired {"at":"2026-06-30T22:33:06.756Z","elapsed_ms":0,"event_name":"agent-status-changed","subscriber_index":0}
+[2026-06-30T22:33:06.835Z] [pty-in] gap_ms=82 bytes=65 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[6A\x1b[38;5;174m✻\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b[?25h"
+[2026-06-30T22:33:07.028Z] [pty-in] gap_ms=193 bytes=65 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[6A\x1b[38;5;174m✽\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b[?25h"
+[2026-06-30T22:33:07.078Z] [pty-in] gap_ms=49 bytes=68 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[2C\x1b[6A\x1b[38;5;216mCo\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b[?25h"
+[2026-06-30T22:33:07.103Z] [pty-in] gap_ms=24 bytes=38 preview="\x1b]0;⠐ Sort files by size descending\x07"
+[2026-06-30T22:33:07.147Z] [pty-in] gap_ms=44 bytes=67 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[4C\x1b[6A\x1b[38;5;216mo\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b[?25h"
+[2026-06-30T22:33:07.215Z] [pty-in] gap_ms=67 bytes=83 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[2C\x1b[6A\x1b[38;5;174mC\x1b[6G\x1b[38;5;216mk\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b[?..."
+[2026-06-30T22:33:07.283Z] [pty-in] gap_ms=67 bytes=85 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[3C\x1b[6A\x1b[38;5;174moo\x1b[7G\x1b[38;5;216min\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b..."
+[2026-06-30T22:33:07.334Z] [pty-in] gap_ms=51 bytes=83 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[5C\x1b[6A\x1b[38;5;174mk\x1b[9G\x1b[38;5;216mg\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b[?..."
+[2026-06-30T22:33:07.402Z] [pty-in] gap_ms=67 bytes=89 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[6A\x1b[38;5;174m✻\x1b[7Gi\x1b[10G\x1b[38;5;216m…\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b..."
+[2026-06-30T22:33:07.469Z] [pty-in] gap_ms=67 bytes=67 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[7C\x1b[6A\x1b[38;5;174mn\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b[?25h"
+[2026-06-30T22:33:07.539Z] [pty-in] gap_ms=69 bytes=70 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[8C\x1b[6A\x1b[38;5;174mg…\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b[?25h"
+[2026-06-30T22:33:07.594Z] [pty-in] gap_ms=55 bytes=65 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[6A\x1b[38;5;174m✶\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b[?25h"
+[2026-06-30T22:33:07.595Z] [emit] kind=agent-status-changed payload_size=142 correlation_id= at_host_ms= state=working source=working-fallback
+[2026-06-30T22:33:07.595Z] [event-remember] kind=agent-status-changed payload_size=142 source=payload
+[2026-06-30T22:33:07.595Z] [turn-state] from=working to=working provider=claude turn=1782858785553 source=working-fallback reason=working menu= jsonlReason= emitted=false
+[2026-06-30T22:33:07.596Z] [iframe] subkind=event-received {"at":"2026-06-30T22:33:07.595Z","event_name":"agent-status-changed","subscribers":1}
+[2026-06-30T22:33:07.597Z] [iframe] subkind=agent-header-status-loaded {"at":"2026-06-30T22:33:07.596Z","elapsed":"2s","provider":"claude","source":"working-fallback","state":"working","verb":""}
+[2026-06-30T22:33:07.597Z] [iframe] subkind=subscriber-fired {"at":"2026-06-30T22:33:07.597Z","elapsed_ms":1,"event_name":"agent-status-changed","subscriber_index":0}
+[2026-06-30T22:33:07.710Z] [pty-in] gap_ms=115 bytes=38 preview="\x1b]0;⠂ Sort files by size descending\x07"
+[2026-06-30T22:33:07.736Z] [pty-in] gap_ms=25 bytes=65 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[6A\x1b[38;5;174m✳\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b[?25h"
+[2026-06-30T22:33:07.856Z] [pty-in] gap_ms=120 bytes=65 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[6A\x1b[38;5;174m✢\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b[?25h"
+[2026-06-30T22:33:07.977Z] [pty-in] gap_ms=120 bytes=64 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[6A\x1b[38;5;174m·\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b[?25h"
+[2026-06-30T22:33:08.432Z] [pty-in] gap_ms=455 bytes=81 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[6A\x1b[38;5;174m✢\x1b[3G\x1b[38;5;216mC\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b[?25h"
+[2026-06-30T22:33:08.494Z] [pty-in] gap_ms=61 bytes=67 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[3C\x1b[6A\x1b[38;5;216mo\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b[?25h"
+[2026-06-30T22:33:08.563Z] [pty-in] gap_ms=69 bytes=81 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[6A\x1b[38;5;174m✳\x1b[5G\x1b[38;5;216mo\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b[?25h"
+[2026-06-30T22:33:08.563Z] [emit] kind=agent-status-changed payload_size=142 correlation_id= at_host_ms= state=working source=working-fallback
+[2026-06-30T22:33:08.563Z] [event-remember] kind=agent-status-changed payload_size=142 source=payload
+[2026-06-30T22:33:08.564Z] [turn-state] from=working to=working provider=claude turn=1782858785553 source=working-fallback reason=working menu= jsonlReason= emitted=false
+[2026-06-30T22:33:08.565Z] [iframe] subkind=event-received {"at":"2026-06-30T22:33:08.564Z","event_name":"agent-status-changed","subscribers":1}
+[2026-06-30T22:33:08.565Z] [iframe] subkind=agent-header-status-loaded {"at":"2026-06-30T22:33:08.564Z","elapsed":"3s","provider":"claude","source":"working-fallback","state":"working","verb":""}
+[2026-06-30T22:33:08.565Z] [iframe] subkind=subscriber-fired {"at":"2026-06-30T22:33:08.565Z","elapsed_ms":0,"event_name":"agent-status-changed","subscriber_index":0}
+[2026-06-30T22:33:08.618Z] [pty-in] gap_ms=54 bytes=83 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[2C\x1b[6A\x1b[38;5;174mC\x1b[6G\x1b[38;5;216mk\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b[?..."
+[2026-06-30T22:33:08.670Z] [pty-in] gap_ms=52 bytes=38 preview="\x1b]0;⠐ Sort files by size descending\x07"
+[2026-06-30T22:33:08.685Z] [pty-in] gap_ms=14 bytes=88 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[6A\x1b[38;5;174m✶\x1b[4Goo\x1b[7G\x1b[38;5;216min\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A..."
+[2026-06-30T22:33:08.755Z] [pty-in] gap_ms=70 bytes=83 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[5C\x1b[6A\x1b[38;5;174mk\x1b[9G\x1b[38;5;216mg\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b[?..."
+[2026-06-30T22:33:08.806Z] [pty-in] gap_ms=50 bytes=89 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[6A\x1b[38;5;174m✻\x1b[7Gi\x1b[10G\x1b[38;5;216m…\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b..."
+[2026-06-30T22:33:08.874Z] [pty-in] gap_ms=67 bytes=68 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[7C\x1b[6A\x1b[38;5;174mng\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b[?25h"
+[2026-06-30T22:33:08.945Z] [pty-in] gap_ms=70 bytes=69 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[9C\x1b[6A\x1b[38;5;174m…\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b[?25h"
+[2026-06-30T22:33:09.013Z] [pty-in] gap_ms=68 bytes=65 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[6A\x1b[38;5;174m✽\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b[?25h"
+[2026-06-30T22:33:09.396Z] [pty-in] gap_ms=382 bytes=65 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[6A\x1b[38;5;174m✻\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b[?25h"
+[2026-06-30T22:33:09.586Z] [pty-in] gap_ms=189 bytes=65 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[6A\x1b[38;5;174m✶\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b[?25h"
+[2026-06-30T22:33:09.586Z] [emit] kind=agent-status-changed payload_size=142 correlation_id= at_host_ms= state=working source=working-fallback
+[2026-06-30T22:33:09.586Z] [event-remember] kind=agent-status-changed payload_size=142 source=payload
+[2026-06-30T22:33:09.586Z] [turn-state] from=working to=working provider=claude turn=1782858785553 source=working-fallback reason=working menu= jsonlReason= emitted=false
+[2026-06-30T22:33:09.587Z] [iframe] subkind=event-received {"at":"2026-06-30T22:33:09.586Z","event_name":"agent-status-changed","subscribers":1}
+[2026-06-30T22:33:09.587Z] [iframe] subkind=agent-header-status-loaded {"at":"2026-06-30T22:33:09.587Z","elapsed":"4s","provider":"claude","source":"working-fallback","state":"working","verb":""}
+[2026-06-30T22:33:09.588Z] [iframe] subkind=subscriber-fired {"at":"2026-06-30T22:33:09.587Z","elapsed_ms":1,"event_name":"agent-status-changed","subscriber_index":0}
+[2026-06-30T22:33:09.631Z] [pty-in] gap_ms=45 bytes=38 preview="\x1b]0;⠂ Sort files by size descending\x07"
+[2026-06-30T22:33:09.706Z] [pty-in] gap_ms=75 bytes=65 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[6A\x1b[38;5;174m✳\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b[?25h"
+[2026-06-30T22:33:09.845Z] [pty-in] gap_ms=138 bytes=81 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[6A\x1b[38;5;174m✢\x1b[3G\x1b[38;5;216mC\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b[?25h"
+[2026-06-30T22:33:09.898Z] [pty-in] gap_ms=53 bytes=67 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[3C\x1b[6A\x1b[38;5;216mo\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b[?25h"
+[2026-06-30T22:33:09.974Z] [pty-in] gap_ms=76 bytes=67 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[4C\x1b[6A\x1b[38;5;216mo\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b[?25h"
+[2026-06-30T22:33:10.024Z] [pty-in] gap_ms=49 bytes=87 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[6A\x1b[38;5;174m·\x1b[3GCo\x1b[6G\x1b[38;5;216mki\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A..."
+[2026-06-30T22:33:10.090Z] [pty-in] gap_ms=66 bytes=83 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[4C\x1b[6A\x1b[38;5;174mo\x1b[8G\x1b[38;5;216mn\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b[?..."
+[2026-06-30T22:33:10.161Z] [pty-in] gap_ms=70 bytes=83 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[5C\x1b[6A\x1b[38;5;174mk\x1b[9G\x1b[38;5;216mg\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b[?..."
+[2026-06-30T22:33:10.216Z] [pty-in] gap_ms=54 bytes=87 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[2C\x1b[6A\x1b[38;5;216mCoo\x1b[7G\x1b[38;5;174ming\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3..."
+[2026-06-30T22:33:10.233Z] [pty-in] gap_ms=16 bytes=105 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[11C\x1b[6A\x1b[38;5;246m(4s · \x1b[38;5;248mthinking\x1b[38;5;246m)\x1b[39m\r\r\n..."
+[2026-06-30T22:33:10.265Z] [pty-in] gap_ms=32 bytes=91 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[4C\x1b[6A\x1b[38;5;174mo\x1b[18G\x1b[38;5;247mthinking\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2..."
+[2026-06-30T22:33:10.387Z] [pty-in] gap_ms=121 bytes=70 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[6A\x1b[38;5;174m✢\x1b[4Go\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b[?25h"
+[2026-06-30T22:33:10.495Z] [pty-in] gap_ms=107 bytes=75 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[17C\x1b[6A\x1b[38;5;246mthinking\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b[?25h"
+[2026-06-30T22:33:10.593Z] [pty-in] gap_ms=97 bytes=38 preview="\x1b]0;⠐ Sort files by size descending\x07"
+[2026-06-30T22:33:10.594Z] [emit] kind=agent-status-changed payload_size=142 correlation_id= at_host_ms= state=working source=working-fallback
+[2026-06-30T22:33:10.594Z] [event-remember] kind=agent-status-changed payload_size=142 source=payload
+[2026-06-30T22:33:10.595Z] [turn-state] from=working to=working provider=claude turn=1782858785553 source=working-fallback reason=working menu= jsonlReason= emitted=false
+[2026-06-30T22:33:10.598Z] [iframe] subkind=event-received {"at":"2026-06-30T22:33:10.595Z","event_name":"agent-status-changed","subscribers":1}
+[2026-06-30T22:33:10.599Z] [iframe] subkind=agent-header-status-loaded {"at":"2026-06-30T22:33:10.597Z","elapsed":"5s","provider":"claude","source":"working-fallback","state":"working","verb":""}
+[2026-06-30T22:33:10.600Z] [iframe] subkind=subscriber-fired {"at":"2026-06-30T22:33:10.598Z","elapsed_ms":1,"event_name":"agent-status-changed","subscriber_index":0}
+[2026-06-30T22:33:10.605Z] [pty-in] gap_ms=12 bytes=87 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[6A\x1b[38;5;174m✳\x1b[3GC\x1b[13G\x1b[38;5;246m5\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b..."
+[2026-06-30T22:33:10.724Z] [pty-in] gap_ms=118 bytes=65 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[6A\x1b[38;5;174m✶\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b[?25h"
+[2026-06-30T22:33:10.828Z] [pty-in] gap_ms=104 bytes=65 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[6A\x1b[38;5;174m✻\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b[?25h"
+[2026-06-30T22:33:11.050Z] [pty-in] gap_ms=222 bytes=145 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[6A\x1b[38;5;174m✽\x1b[18G\x1b[38;5;246m↓\x1b[39m \x1b[38;5;246m38 tokens · \x1b[3..."
+[2026-06-30T22:33:11.173Z] [pty-in] gap_ms=122 bytes=93 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[19C\x1b[6A\x1b[38;5;246m56\x1b[32G\x1b[38;5;248mthinking\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b..."
+[2026-06-30T22:33:11.272Z] [pty-in] gap_ms=98 bytes=898 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[6A\x1b[38;5;246m⏺\x1b[3G\x1b[39mListing \x1b[1m1\x1b[22m directory… \x1b[38;5;246..."
+[2026-06-30T22:33:11.288Z] [pty-in] gap_ms=16 bytes=69 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[19C\x1b[6A\x1b[38;5;246m75\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b[?25h"
+[2026-06-30T22:33:11.300Z] [iframe] subkind=first-output-seen {"at":"2026-06-30T22:33:11.299Z","value":true}
+[2026-06-30T22:33:11.304Z] [pty-in] gap_ms=15 bytes=71 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[28C\x1b[6A\x1b[38;5;246m)\x1b[39m\x1b[K\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b[?25h"
+[2026-06-30T22:33:11.405Z] [pty-in] gap_ms=101 bytes=82 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[6A\x1b[38;5;174m✻\x1b[20G\x1b[38;5;246m8\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b[?25h"
+[2026-06-30T22:33:11.499Z] [pty-in] gap_ms=93 bytes=68 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[19C\x1b[6A\x1b[38;5;246m9\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b[?25h"
+[2026-06-30T22:33:11.532Z] [pty-in] gap_ms=33 bytes=69 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[9A\x1b[38;5;246m \x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b[?25h"
+[2026-06-30T22:33:11.534Z] [iframe] subkind=first-output-seen {"at":"2026-06-30T22:33:11.534Z","value":false}
+[2026-06-30T22:33:11.552Z] [pty-in] gap_ms=20 bytes=38 preview="\x1b]0;⠂ Sort files by size descending\x07"
+[2026-06-30T22:33:11.553Z] [emit] kind=agent-status-changed payload_size=142 correlation_id= at_host_ms= state=working source=working-fallback
+[2026-06-30T22:33:11.553Z] [event-remember] kind=agent-status-changed payload_size=142 source=payload
+[2026-06-30T22:33:11.553Z] [turn-state] from=working to=working provider=claude turn=1782858785553 source=working-fallback reason=working menu= jsonlReason= emitted=false
+[2026-06-30T22:33:11.554Z] [iframe] subkind=event-received {"at":"2026-06-30T22:33:11.553Z","event_name":"agent-status-changed","subscribers":1}
+[2026-06-30T22:33:11.554Z] [iframe] subkind=agent-header-status-loaded {"at":"2026-06-30T22:33:11.553Z","elapsed":"6s","provider":"claude","source":"working-fallback","state":"working","verb":""}
+[2026-06-30T22:33:11.554Z] [iframe] subkind=subscriber-fired {"at":"2026-06-30T22:33:11.554Z","elapsed_ms":0,"event_name":"agent-status-changed","subscriber_index":0}
+[2026-06-30T22:33:11.578Z] [route] phase=entry method=POST path=__menu/permission/clear query= correlation_id=route-1782858791578-38
+[2026-06-30T22:33:11.578Z] [hook-menu] op=clear provider=? tool=? reason=hook-clear
+[2026-06-30T22:33:11.578Z] [turn-state] from=working to=working provider=claude turn=1782858785553 source=hook-permission reason=dismissed menu= jsonlReason= emitted=false
+[2026-06-30T22:33:11.578Z] [emit] kind=pty-menu-changed payload_size=4 correlation_id= at_host_ms=
+[2026-06-30T22:33:11.578Z] [event-remember] kind=pty-menu-changed payload_size=4 source=payload
+[2026-06-30T22:33:11.578Z] [route] phase=entry method=POST path=__menu/permission/clear query= correlation_id=route-1782858791578-39
+[2026-06-30T22:33:11.578Z] [route] phase=exit method=POST path=__menu/permission/clear status=200 body_size=26 duration_ms=0 correlation_id=route-1782858791578-38
+[2026-06-30T22:33:11.578Z] [hook-menu] op=clear provider=? tool=? reason=hook-clear
+[2026-06-30T22:33:11.578Z] [emit] kind=pty-menu-changed payload_size=4 correlation_id= at_host_ms=
+[2026-06-30T22:33:11.578Z] [event-remember] kind=pty-menu-changed payload_size=4 source=payload
+[2026-06-30T22:33:11.578Z] [route] phase=exit method=POST path=__menu/permission/clear status=200 body_size=26 duration_ms=0 correlation_id=route-1782858791578-39
+[2026-06-30T22:33:11.591Z] [iframe] subkind=event-received {"at":"2026-06-30T22:33:11.590Z","event_name":"pty-menu-changed","subscribers":3}
+[2026-06-30T22:33:11.591Z] [iframe] subkind=listener-fired {"assignedMenu":"","at":"2026-06-30T22:33:11.590Z","at_host_ms":0,"cache_source":"","context":"pty-menu-changed","delta_to_emit_ms":-1,"hasSignature":false,"last_cache_source":"setAgentMenuFromEvent","last_host_ms":1782858791590,"menuId":"(none)","signatureChars":0,"stale":false,"suppressFallback":true,"surface":"agent-menu","tool":""}
+[2026-06-30T22:33:11.591Z] [iframe] subkind=subscriber-fired {"at":"2026-06-30T22:33:11.590Z","elapsed_ms":0,"event_name":"pty-menu-changed","subscriber_index":0}
+[2026-06-30T22:33:11.591Z] [iframe] subkind=subscriber-fired {"at":"2026-06-30T22:33:11.591Z","elapsed_ms":0,"event_name":"pty-menu-changed","subscriber_index":1}
+[2026-06-30T22:33:11.591Z] [iframe] subkind=subscriber-fired {"at":"2026-06-30T22:33:11.591Z","elapsed_ms":0,"event_name":"pty-menu-changed","subscriber_index":2}
+[2026-06-30T22:33:11.592Z] [iframe] subkind=event-received {"at":"2026-06-30T22:33:11.591Z","event_name":"pty-menu-changed","subscribers":3}
+[2026-06-30T22:33:11.592Z] [iframe] subkind=listener-fired {"assignedMenu":"","at":"2026-06-30T22:33:11.591Z","at_host_ms":0,"cache_source":"","context":"pty-menu-changed","delta_to_emit_ms":-1,"hasSignature":false,"last_cache_source":"setAgentMenuFromEvent","last_host_ms":1782858791591,"menuId":"(none)","signatureChars":0,"stale":false,"suppressFallback":true,"surface":"agent-menu","tool":""}
+[2026-06-30T22:33:11.592Z] [iframe] subkind=subscriber-fired {"at":"2026-06-30T22:33:11.591Z","elapsed_ms":0,"event_name":"pty-menu-changed","subscriber_index":0}
+[2026-06-30T22:33:11.592Z] [iframe] subkind=subscriber-fired {"at":"2026-06-30T22:33:11.592Z","elapsed_ms":0,"event_name":"pty-menu-changed","subscriber_index":1}
+[2026-06-30T22:33:11.592Z] [iframe] subkind=subscriber-fired {"at":"2026-06-30T22:33:11.592Z","elapsed_ms":0,"event_name":"pty-menu-changed","subscriber_index":2}
+[2026-06-30T22:33:11.597Z] [pty-in] gap_ms=45 bytes=158 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[6A\x1b[38;5;174m✶\x1b[7G\x1b[38;5;216ming\x1b[13G\x1b[38;5;246m6\x1b[18G↑\x1b[20G100..."
+[2026-06-30T22:33:11.636Z] [pty-in] gap_ms=38 bytes=104 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[6C\x1b[6A\x1b[38;5;174min\x1b[10G\x1b[38;5;216m…\x1b[22G\x1b[38;5;246m5\x1b[39m\r\r\n\r\n..."
+[2026-06-30T22:33:11.691Z] [pty-in] gap_ms=54 bytes=87 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[6A\x1b[38;5;174m✳\x1b[9Gg\x1b[22G\x1b[38;5;246m9\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b..."
+[2026-06-30T22:33:11.760Z] [pty-in] gap_ms=69 bytes=87 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[9C\x1b[6A\x1b[38;5;174m…\x1b[21G\x1b[38;5;246m15\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b..."
+[2026-06-30T22:33:11.828Z] [pty-in] gap_ms=68 bytes=82 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[6A\x1b[38;5;174m✢\x1b[22G\x1b[38;5;246m6\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b[?25h"
+[2026-06-30T22:33:11.952Z] [pty-in] gap_ms=124 bytes=68 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[21C\x1b[6A\x1b[38;5;246m8\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b[?25h"
+[2026-06-30T22:33:12.020Z] [pty-in] gap_ms=68 bytes=105 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[6A\x1b[38;5;174m·\x1b[22G\x1b[38;5;246m9\x1b[33G\x1b[38;5;248mthinking\x1b[39m\r\r\n..."
+[2026-06-30T22:33:12.144Z] [pty-in] gap_ms=123 bytes=77 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[9A\x1b[38;5;246m⏺\r\x1b[20C\x1b[3B20\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b[?25h"
+[2026-06-30T22:33:12.147Z] [iframe] subkind=first-output-seen {"at":"2026-06-30T22:33:12.146Z","value":true}
+[2026-06-30T22:33:12.213Z] [pty-in] gap_ms=68 bytes=68 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[21C\x1b[6A\x1b[38;5;246m2\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b[?25h"
+[2026-06-30T22:33:12.228Z] [pty-in] gap_ms=15 bytes=82 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[32C\x1b[6A\x1b[38;5;246mthought for 1s)\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b[?2..."
+[2026-06-30T22:33:12.337Z] [pty-in] gap_ms=109 bytes=68 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[21C\x1b[6A\x1b[38;5;246m3\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b[?25h"
+[2026-06-30T22:33:12.390Z] [pty-in] gap_ms=53 bytes=82 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[6A\x1b[38;5;174m✢\x1b[22G\x1b[38;5;246m4\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b[?25h"
+[2026-06-30T22:33:12.460Z] [pty-in] gap_ms=69 bytes=68 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[21C\x1b[6A\x1b[38;5;246m5\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b[?25h"
+[2026-06-30T22:33:12.513Z] [pty-in] gap_ms=52 bytes=38 preview="\x1b]0;⠐ Sort files by size descending\x07"
+[2026-06-30T22:33:12.528Z] [pty-in] gap_ms=15 bytes=68 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[21C\x1b[6A\x1b[38;5;246m6\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b[?25h"
+[2026-06-30T22:33:12.598Z] [pty-in] gap_ms=69 bytes=88 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[6A\x1b[38;5;174m✳\x1b[13G\x1b[38;5;246m7\x1b[22G7\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A..."
+[2026-06-30T22:33:12.598Z] [emit] kind=agent-status-changed payload_size=142 correlation_id= at_host_ms= state=working source=working-fallback
+[2026-06-30T22:33:12.598Z] [event-remember] kind=agent-status-changed payload_size=142 source=payload
+[2026-06-30T22:33:12.598Z] [turn-state] from=working to=working provider=claude turn=1782858785553 source=working-fallback reason=working menu= jsonlReason= emitted=false
+[2026-06-30T22:33:12.599Z] [iframe] subkind=event-received {"at":"2026-06-30T22:33:12.598Z","event_name":"agent-status-changed","subscribers":1}
+[2026-06-30T22:33:12.600Z] [iframe] subkind=agent-header-status-loaded {"at":"2026-06-30T22:33:12.599Z","elapsed":"7s","provider":"claude","source":"working-fallback","state":"working","verb":""}
+[2026-06-30T22:33:12.600Z] [iframe] subkind=subscriber-fired {"at":"2026-06-30T22:33:12.599Z","elapsed_ms":1,"event_name":"agent-status-changed","subscriber_index":0}
+[2026-06-30T22:33:12.651Z] [pty-in] gap_ms=53 bytes=84 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[2C\x1b[6A\x1b[38;5;216mC\x1b[22G\x1b[38;5;246m8\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b[..."
+[2026-06-30T22:33:12.722Z] [pty-in] gap_ms=70 bytes=98 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[6A\x1b[38;5;174m✶\x1b[4G\x1b[38;5;216mo\x1b[22G\x1b[38;5;246m9\x1b[39m\r\r\n\r\n\r\n\r\n\r\n..."
+[2026-06-30T22:33:12.756Z] [pty-in] gap_ms=33 bytes=69 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[9A\x1b[38;5;246m \x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b[?25h"
+[2026-06-30T22:33:12.769Z] [iframe] subkind=first-output-seen {"at":"2026-06-30T22:33:12.768Z","value":false}
+[2026-06-30T22:33:12.793Z] [pty-in] gap_ms=37 bytes=102 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[2C\x1b[6A\x1b[38;5;174mC\x1b[5G\x1b[38;5;216mok\x1b[21G\x1b[38;5;246m30\x1b[39m\r\r\n\r\n..."
+[2026-06-30T22:33:12.849Z] [pty-in] gap_ms=55 bytes=86 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[6A\x1b[38;5;174m✻\x1b[4Go\x1b[7G\x1b[38;5;216mi\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b[..."
+[2026-06-30T22:33:12.921Z] [pty-in] gap_ms=71 bytes=83 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[4C\x1b[6A\x1b[38;5;174mo\x1b[8G\x1b[38;5;216mn\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b[?..."
+[2026-06-30T22:33:12.971Z] [pty-in] gap_ms=49 bytes=90 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[6A\x1b[38;5;174m✽\x1b[6Gki\x1b[9G\x1b[38;5;216mg…\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A..."
+[2026-06-30T22:33:13.045Z] [pty-in] gap_ms=73 bytes=67 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[7C\x1b[6A\x1b[38;5;174mn\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b[?25h"
+[2026-06-30T22:33:13.095Z] [pty-in] gap_ms=50 bytes=67 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[8C\x1b[6A\x1b[38;5;174mg\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b[?25h"
+[2026-06-30T22:33:13.166Z] [pty-in] gap_ms=70 bytes=69 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[9C\x1b[6A\x1b[38;5;174m…\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b[?25h"
+[2026-06-30T22:33:13.354Z] [pty-in] gap_ms=187 bytes=71 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[9A\x1b[38;5;246m⏺\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b[?25h"
+[2026-06-30T22:33:13.356Z] [iframe] subkind=first-output-seen {"at":"2026-06-30T22:33:13.355Z","value":true}
+[2026-06-30T22:33:13.425Z] [pty-in] gap_ms=71 bytes=65 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[6A\x1b[38;5;174m✻\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b[?25h"
+[2026-06-30T22:33:13.476Z] [pty-in] gap_ms=50 bytes=38 preview="\x1b]0;⠂ Sort files by size descending\x07"
+[2026-06-30T22:33:13.555Z] [pty-in] gap_ms=79 bytes=65 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[6A\x1b[38;5;174m✶\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b[?25h"
+[2026-06-30T22:33:13.556Z] [emit] kind=agent-status-changed payload_size=142 correlation_id= at_host_ms= state=working source=working-fallback
+[2026-06-30T22:33:13.556Z] [event-remember] kind=agent-status-changed payload_size=142 source=payload
+[2026-06-30T22:33:13.556Z] [turn-state] from=working to=working provider=claude turn=1782858785553 source=working-fallback reason=working menu= jsonlReason= emitted=false
+[2026-06-30T22:33:13.559Z] [iframe] subkind=event-received {"at":"2026-06-30T22:33:13.557Z","event_name":"agent-status-changed","subscribers":1}
+[2026-06-30T22:33:13.561Z] [iframe] subkind=agent-header-status-loaded {"at":"2026-06-30T22:33:13.558Z","elapsed":"8s","provider":"claude","source":"working-fallback","state":"working","verb":""}
+[2026-06-30T22:33:13.562Z] [iframe] subkind=subscriber-fired {"at":"2026-06-30T22:33:13.560Z","elapsed_ms":1,"event_name":"agent-status-changed","subscriber_index":0}
+[2026-06-30T22:33:13.611Z] [pty-in] gap_ms=55 bytes=68 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[12C\x1b[6A\x1b[38;5;246m8\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b[?25h"
+[2026-06-30T22:33:13.679Z] [pty-in] gap_ms=67 bytes=65 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[6A\x1b[38;5;174m✳\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b[?25h"
+[2026-06-30T22:33:13.799Z] [pty-in] gap_ms=120 bytes=65 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[6A\x1b[38;5;174m✢\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b[?25h"
+[2026-06-30T22:33:13.968Z] [pty-in] gap_ms=169 bytes=69 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[9A\x1b[38;5;246m \x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b[?25h"
+[2026-06-30T22:33:13.985Z] [iframe] subkind=first-output-seen {"at":"2026-06-30T22:33:13.985Z","value":false}
+[2026-06-30T22:33:14.003Z] [pty-in] gap_ms=34 bytes=64 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[6A\x1b[38;5;174m·\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b[?25h"
+[2026-06-30T22:33:14.055Z] [pty-in] gap_ms=52 bytes=67 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[2C\x1b[6A\x1b[38;5;216mC\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b[?25h"
+[2026-06-30T22:33:14.124Z] [pty-in] gap_ms=68 bytes=68 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[3C\x1b[6A\x1b[38;5;216moo\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b[?25h"
+[2026-06-30T22:33:14.194Z] [pty-in] gap_ms=70 bytes=83 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[2C\x1b[6A\x1b[38;5;174mC\x1b[6G\x1b[38;5;216mk\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b[?..."
+[2026-06-30T22:33:14.218Z] [pty-in] gap_ms=23 bytes=71 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[29C\x1b[6A\x1b[38;5;246m)\x1b[39m\x1b[K\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b[?25h"
+[2026-06-30T22:33:14.263Z] [pty-in] gap_ms=45 bytes=83 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[3C\x1b[6A\x1b[38;5;174mo\x1b[7G\x1b[38;5;216mi\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b[?..."
+[2026-06-30T22:33:14.316Z] [pty-in] gap_ms=52 bytes=83 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[4C\x1b[6A\x1b[38;5;174mo\x1b[8G\x1b[38;5;216mn\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b[?..."
+[2026-06-30T22:33:14.386Z] [pty-in] gap_ms=69 bytes=90 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[6A\x1b[38;5;174m✢\x1b[6Gki\x1b[9G\x1b[38;5;216mg…\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A..."
+[2026-06-30T22:33:14.438Z] [pty-in] gap_ms=52 bytes=38 preview="\x1b]0;⠐ Sort files by size descending\x07"
+[2026-06-30T22:33:14.438Z] [pty-in] gap_ms=0 bytes=67 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[7C\x1b[6A\x1b[38;5;174mn\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b[?25h"
+[2026-06-30T22:33:14.472Z] [iframe] subkind=heartbeat-batch {"at":"2026-06-30T22:33:14.471Z","avgDriftMs":2,"fires":50,"maxDriftMs":33,"spanMs":9875,"spikes":0,"sumDriftMs":76}
+[2026-06-30T22:33:14.510Z] [pty-in] gap_ms=71 bytes=67 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[8C\x1b[6A\x1b[38;5;174mg\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b[?25h"
+[2026-06-30T22:33:14.580Z] [pty-in] gap_ms=70 bytes=109 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[9A\x1b[38;5;246m⏺\r\x1b[3B\x1b[38;5;174m✳\x1b[10G…\x1b[13G\x1b[38;5;246m9\x1b[39m\r\r\n\r..."
+[2026-06-30T22:33:14.580Z] [emit] kind=agent-status-changed payload_size=142 correlation_id= at_host_ms= state=working source=working-fallback
+[2026-06-30T22:33:14.580Z] [event-remember] kind=agent-status-changed payload_size=142 source=payload
+[2026-06-30T22:33:14.580Z] [turn-state] from=working to=working provider=claude turn=1782858785553 source=working-fallback reason=working menu= jsonlReason= emitted=false
+[2026-06-30T22:33:14.581Z] [iframe] subkind=event-received {"at":"2026-06-30T22:33:14.581Z","event_name":"agent-status-changed","subscribers":1}
+[2026-06-30T22:33:14.582Z] [iframe] subkind=agent-header-status-loaded {"at":"2026-06-30T22:33:14.581Z","elapsed":"9s","provider":"claude","source":"working-fallback","state":"working","verb":""}
+[2026-06-30T22:33:14.582Z] [iframe] subkind=subscriber-fired {"at":"2026-06-30T22:33:14.582Z","elapsed_ms":1,"event_name":"agent-status-changed","subscriber_index":0}
+[2026-06-30T22:33:14.583Z] [iframe] subkind=first-output-seen {"at":"2026-06-30T22:33:14.582Z","value":true}
+[2026-06-30T22:33:14.682Z] [pty-in] gap_ms=101 bytes=90 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[7C\x1b[6A\x1b[38;5;216mng…\x1b[18G\x1b[38;5;246m↓\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A..."
+[2026-06-30T22:33:14.751Z] [pty-in] gap_ms=69 bytes=82 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[6A\x1b[38;5;174m✶\x1b[22G\x1b[38;5;246m1\x1b[39m\r\r\n\r\n\r\n\r\n\r\n\r\n\x1b[2C\x1b[3A\x1b[?25h"
+[2026-06-30T22:33:14.869Z] [pty-in] gap_ms=117 bytes=100 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[6A\x1b[38;5;174m✻\x1b[7G\x1b[38;5;216mi\x1b[10G\x1b[38;5;174m…\x1b[39m\r\r\n\r\n\r\n\r\n\r\n..."
+[2026-06-30T22:33:14.956Z] [pty-in] gap_ms=87 bytes=1024 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[9A \x1b[3G\x1b[38;5;246mListed \x1b[1m1\x1b[22m directory (ctrl+o to expand..."
+[2026-06-30T22:33:14.956Z] [pty-in] gap_ms=0 bytes=238 preview="──────────────────────────\x1b[39m\r\r\n\x1b[3G\x1b[38;5;246mesc\x1b[7Gto\x1b[10Ginterrupt\x1b[20G\x1b[3..."
+[2026-06-30T22:33:15.399Z] [pty-in] gap_ms=442 bytes=38 preview="\x1b]0;⠂ Sort files by size descending\x07"
+[2026-06-30T22:33:15.440Z] [pty-in] gap_ms=41 bytes=1024 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[31C\x1b[9A─────┐\r\x1b[26C\x1b[1B  Name\x1b[37G│\r\x1b[31C\x1b[1B─────┤\r\x1b[2C\x1b[1B│ 4..."
+[2026-06-30T22:33:15.441Z] [pty-in] gap_ms=0 bytes=377 preview="\r\n\x1b[38;5;244m───────────────────────────────────────────────────────────────────..."
+[2026-06-30T22:33:16.001Z] [pty-in] gap_ms=560 bytes=1024 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[36C\x1b[16A─┐\r\x1b[28C\x1b[1B Name\x1b[37G │\r\x1b[36C\x1b[1B─┤\r\x1b[36C\x1b[1B │\r\x1b[36C\x1b..."
+[2026-06-30T22:33:16.001Z] [emit] kind=agent-status-changed payload_size=143 correlation_id= at_host_ms= state=working source=working-fallback
+[2026-06-30T22:33:16.001Z] [event-remember] kind=agent-status-changed payload_size=143 source=payload
+[2026-06-30T22:33:16.001Z] [turn-state] from=working to=working provider=claude turn=1782858785553 source=working-fallback reason=working menu= jsonlReason= emitted=false
+[2026-06-30T22:33:16.001Z] [pty-in] gap_ms=0 bytes=358 preview="──────────────────────────────────────────────────────────────────\x1b[39m\r\r\n\x1b[3G\x1b[..."
+[2026-06-30T22:33:16.002Z] [iframe] subkind=event-received {"at":"2026-06-30T22:33:16.001Z","event_name":"agent-status-changed","subscribers":1}
+[2026-06-30T22:33:16.002Z] [iframe] subkind=agent-header-status-loaded {"at":"2026-06-30T22:33:16.002Z","elapsed":"10s","provider":"claude","source":"working-fallback","state":"working","verb":""}
+[2026-06-30T22:33:16.003Z] [iframe] subkind=subscriber-fired {"at":"2026-06-30T22:33:16.002Z","elapsed_ms":1,"event_name":"agent-status-changed","subscriber_index":0}
+[2026-06-30T22:33:16.361Z] [pty-in] gap_ms=359 bytes=38 preview="\x1b]0;⠐ Sort files by size descending\x07"
+[2026-06-30T22:33:16.635Z] [pty-in] gap_ms=273 bytes=38 preview="\x1b]0;✳ Sort files by size descending\x07"
+[2026-06-30T22:33:16.635Z] [emit] kind=agent-status-changed payload_size=143 correlation_id= at_host_ms= state=working source=working-fallback
+[2026-06-30T22:33:16.635Z] [event-remember] kind=agent-status-changed payload_size=143 source=payload
+[2026-06-30T22:33:16.635Z] [turn-state] from=working to=working provider=claude turn=1782858785553 source=working-fallback reason=working menu= jsonlReason= emitted=false
+[2026-06-30T22:33:16.636Z] [iframe] subkind=event-received {"at":"2026-06-30T22:33:16.635Z","event_name":"agent-status-changed","subscribers":1}
+[2026-06-30T22:33:16.636Z] [pty-in] gap_ms=1 bytes=1011 preview="\x1b[?25l\x1b[2D\x1b[3B\r\x1b[4A  Note: directory sizes shown are the size of the directory e..."
+[2026-06-30T22:33:16.636Z] [iframe] subkind=agent-header-status-loaded {"at":"2026-06-30T22:33:16.636Z","elapsed":"11s","provider":"claude","source":"working-fallback","state":"working","verb":""}
+[2026-06-30T22:33:16.637Z] [iframe] subkind=subscriber-fired {"at":"2026-06-30T22:33:16.636Z","elapsed_ms":0,"event_name":"agent-status-changed","subscriber_index":0}
+[2026-06-30T22:33:16.891Z] [claude-finished-probe] op=jsonl-end-observed source=claude-stats-poll turn=1782858785553 note=expect-claude-jsonl-turn-end-scan
+[2026-06-30T22:33:19.169Z] [pty-in] gap_ms=2532 bytes=93 preview="\x1b[?25l\x1b[2D\x1b[4B\r\x1b[2C\x1b[4A\x1b[2myes, recursive directory sizes with du\x1b[22m\r\r\n\r\n\r\n\r\n\x1b..."
+[2026-06-30T22:33:19.169Z] [spinner-period] state=ended duration_ms=13603
+[2026-06-30T22:33:19.170Z] [turn-end] source=pty-turn-activity-stop silence_ms=2533
+[2026-06-30T22:33:19.170Z] [emit] kind=agent-turn-end payload_size=0 correlation_id=
+[2026-06-30T22:33:19.170Z] [agent-status] op=skip-clear source=pty-turn-activity-stop silence_ms=2533 menu_pending=false post_escape=false
+[2026-06-30T22:33:24.515Z] [iframe] subkind=heartbeat-batch {"at":"2026-06-30T22:33:24.514Z","avgDriftMs":1,"fires":50,"maxDriftMs":1,"spanMs":9843,"spikes":0,"sumDriftMs":43}
+[2026-06-30T22:33:34.554Z] [iframe] subkind=heartbeat-batch {"at":"2026-06-30T22:33:34.552Z","avgDriftMs":1,"fires":50,"maxDriftMs":2,"spanMs":9837,"spikes":0,"sumDriftMs":38}
+[2026-06-30T22:33:44.594Z] [iframe] subkind=heartbeat-batch {"at":"2026-06-30T22:33:44.593Z","avgDriftMs":1,"fires":50,"maxDriftMs":2,"spanMs":9840,"spikes":0,"sumDriftMs":41}
+[2026-06-30T22:33:54.633Z] [iframe] subkind=heartbeat-batch {"at":"2026-06-30T22:33:54.632Z","avgDriftMs":1,"fires":50,"maxDriftMs":2,"spanMs":9839,"spikes":0,"sumDriftMs":39}
+[2026-06-30T22:34:04.675Z] [iframe] subkind=heartbeat-batch {"at":"2026-06-30T22:34:04.674Z","avgDriftMs":1,"fires":50,"maxDriftMs":1,"spanMs":9841,"spikes":0,"sumDriftMs":42}
+[2026-06-30T22:34:14.717Z] [iframe] subkind=heartbeat-batch {"at":"2026-06-30T22:34:14.715Z","avgDriftMs":1,"fires":50,"maxDriftMs":2,"spanMs":9840,"spikes":0,"sumDriftMs":41}
+[2026-06-30T22:34:24.756Z] [iframe] subkind=heartbeat-batch {"at":"2026-06-30T22:34:24.756Z","avgDriftMs":1,"fires":50,"maxDriftMs":2,"spanMs":9840,"spikes":0,"sumDriftMs":40}
+[2026-06-30T22:34:34.797Z] [iframe] subkind=heartbeat-batch {"at":"2026-06-30T22:34:34.795Z","avgDriftMs":1,"fires":50,"maxDriftMs":2,"spanMs":9839,"spikes":0,"sumDriftMs":40}
+[2026-06-30T22:34:44.833Z] [iframe] subkind=heartbeat-batch {"at":"2026-06-30T22:34:44.832Z","avgDriftMs":1,"fires":50,"maxDriftMs":2,"spanMs":9837,"spikes":0,"sumDriftMs":36}
+[2026-06-30T22:34:54.879Z] [iframe] subkind=heartbeat-batch {"at":"2026-06-30T22:34:54.875Z","avgDriftMs":1,"fires":50,"maxDriftMs":2,"spanMs":9843,"spikes":0,"sumDriftMs":44}
+[2026-06-30T22:35:04.923Z] [iframe] subkind=heartbeat-batch {"at":"2026-06-30T22:35:04.922Z","avgDriftMs":1,"fires":50,"maxDriftMs":2,"spanMs":9846,"spikes":0,"sumDriftMs":46}
+[2026-06-30T22:35:14.968Z] [iframe] subkind=heartbeat-batch {"at":"2026-06-30T22:35:14.966Z","avgDriftMs":1,"fires":50,"maxDriftMs":2,"spanMs":9844,"spikes":0,"sumDriftMs":44}
+[2026-06-30T22:35:25.011Z] [iframe] subkind=heartbeat-batch {"at":"2026-06-30T22:35:25.010Z","avgDriftMs":1,"fires":50,"maxDriftMs":2,"spanMs":9844,"spikes":0,"sumDriftMs":44}
+[2026-06-30T22:35:35.054Z] [iframe] subkind=heartbeat-batch {"at":"2026-06-30T22:35:35.051Z","avgDriftMs":1,"fires":50,"maxDriftMs":2,"spanMs":9840,"spikes":0,"sumDriftMs":41}
+[2026-06-30T22:35:45.096Z] [iframe] subkind=heartbeat-batch {"at":"2026-06-30T22:35:45.095Z","avgDriftMs":1,"fires":50,"maxDriftMs":2,"spanMs":9843,"spikes":0,"sumDriftMs":44}
+[2026-06-30T22:35:55.139Z] [iframe] subkind=heartbeat-batch {"at":"2026-06-30T22:35:55.137Z","avgDriftMs":1,"fires":50,"maxDriftMs":2,"spanMs":9842,"spikes":0,"sumDriftMs":42}
+[2026-06-30T22:36:05.184Z] [iframe] subkind=heartbeat-batch {"at":"2026-06-30T22:36:05.183Z","avgDriftMs":1,"fires":50,"maxDriftMs":2,"spanMs":9845,"spikes":0,"sumDriftMs":46}
+[2026-06-30T22:36:15.223Z] [iframe] subkind=heartbeat-batch {"at":"2026-06-30T22:36:15.222Z","avgDriftMs":1,"fires":50,"maxDriftMs":1,"spanMs":9839,"spikes":0,"sumDriftMs":38}
+[2026-06-30T22:36:25.262Z] [iframe] subkind=heartbeat-batch {"at":"2026-06-30T22:36:25.260Z","avgDriftMs":1,"fires":50,"maxDriftMs":1,"spanMs":9837,"spikes":0,"sumDriftMs":38}
+[2026-06-30T22:36:35.299Z] [iframe] subkind=heartbeat-batch {"at":"2026-06-30T22:36:35.299Z","avgDriftMs":1,"fires":50,"maxDriftMs":1,"spanMs":9839,"spikes":0,"sumDriftMs":39}
+[2026-06-30T22:36:45.343Z] [iframe] subkind=heartbeat-batch {"at":"2026-06-30T22:36:45.342Z","avgDriftMs":1,"fires":50,"maxDriftMs":2,"spanMs":9843,"spikes":0,"sumDriftMs":43}
+[2026-06-30T22:36:55.389Z] [iframe] subkind=heartbeat-batch {"at":"2026-06-30T22:36:55.388Z","avgDriftMs":1,"fires":50,"maxDriftMs":2,"spanMs":9846,"spikes":0,"sumDriftMs":46}
+[2026-06-30T22:37:05.431Z] [iframe] subkind=heartbeat-batch {"at":"2026-06-30T22:37:05.430Z","avgDriftMs":1,"fires":50,"maxDriftMs":2,"spanMs":9841,"spikes":0,"sumDriftMs":42}
+[2026-06-30T22:37:15.472Z] [iframe] subkind=heartbeat-batch {"at":"2026-06-30T22:37:15.471Z","avgDriftMs":1,"fires":50,"maxDriftMs":2,"spanMs":9839,"spikes":0,"sumDriftMs":41}
+[2026-06-30T22:37:25.513Z] [iframe] subkind=heartbeat-batch {"at":"2026-06-30T22:37:25.512Z","avgDriftMs":1,"fires":50,"maxDriftMs":2,"spanMs":9840,"spikes":0,"sumDriftMs":41}
+[2026-06-30T22:37:35.556Z] [iframe] subkind=heartbeat-batch {"at":"2026-06-30T22:37:35.555Z","avgDriftMs":1,"fires":50,"maxDriftMs":2,"spanMs":9843,"spikes":0,"sumDriftMs":43}
+[2026-06-30T22:37:45.600Z] [iframe] subkind=heartbeat-batch {"at":"2026-06-30T22:37:45.599Z","avgDriftMs":1,"fires":50,"maxDriftMs":2,"spanMs":9843,"spikes":0,"sumDriftMs":43}
+[2026-06-30T22:37:55.641Z] [iframe] subkind=heartbeat-batch {"at":"2026-06-30T22:37:55.640Z","avgDriftMs":1,"fires":50,"maxDriftMs":2,"spanMs":9840,"spikes":0,"sumDriftMs":41}
+[2026-06-30T22:38:05.683Z] [iframe] subkind=heartbeat-batch {"at":"2026-06-30T22:38:05.682Z","avgDriftMs":1,"fires":50,"maxDriftMs":2,"spanMs":9842,"spikes":0,"sumDriftMs":42}
+[2026-06-30T22:38:15.729Z] [iframe] subkind=heartbeat-batch {"at":"2026-06-30T22:38:15.728Z","avgDriftMs":1,"fires":50,"maxDriftMs":1,"spanMs":9845,"spikes":0,"sumDriftMs":46}
+[2026-06-30T22:38:25.773Z] [iframe] subkind=heartbeat-batch {"at":"2026-06-30T22:38:25.772Z","avgDriftMs":1,"fires":50,"maxDriftMs":2,"spanMs":9843,"spikes":0,"sumDriftMs":44}
+[2026-06-30T22:38:35.808Z] [iframe] subkind=heartbeat-batch {"at":"2026-06-30T22:38:35.807Z","avgDriftMs":1,"fires":50,"maxDriftMs":2,"spanMs":9834,"spikes":0,"sumDriftMs":35}
+[2026-06-30T22:38:45.851Z] [iframe] subkind=heartbeat-batch {"at":"2026-06-30T22:38:45.850Z","avgDriftMs":1,"fires":50,"maxDriftMs":2,"spanMs":9842,"spikes":0,"sumDriftMs":43}
+[2026-06-30T22:38:55.894Z] [iframe] subkind=heartbeat-batch {"at":"2026-06-30T22:38:55.893Z","avgDriftMs":1,"fires":50,"maxDriftMs":2,"spanMs":9842,"spikes":0,"sumDriftMs":42}
+[2026-06-30T22:39:05.935Z] [iframe] subkind=heartbeat-batch {"at":"2026-06-30T22:39:05.934Z","avgDriftMs":1,"fires":50,"maxDriftMs":1,"spanMs":9840,"spikes":0,"sumDriftMs":41}
+[2026-06-30T22:39:15.977Z] [iframe] subkind=heartbeat-batch {"at":"2026-06-30T22:39:15.976Z","avgDriftMs":1,"fires":50,"maxDriftMs":1,"spanMs":9841,"spikes":0,"sumDriftMs":42}
+[2026-06-30T22:39:26.019Z] [iframe] subkind=heartbeat-batch {"at":"2026-06-30T22:39:26.018Z","avgDriftMs":1,"fires":50,"maxDriftMs":2,"spanMs":9841,"spikes":0,"sumDriftMs":42}
+[2026-06-30T22:39:36.061Z] [iframe] subkind=heartbeat-batch {"at":"2026-06-30T22:39:36.060Z","avgDriftMs":1,"fires":50,"maxDriftMs":2,"spanMs":9841,"spikes":0,"sumDriftMs":42}
+[2026-06-30T22:39:46.097Z] [iframe] subkind=heartbeat-batch {"at":"2026-06-30T22:39:46.096Z","avgDriftMs":1,"fires":50,"maxDriftMs":2,"spanMs":9836,"spikes":0,"sumDriftMs":36}
